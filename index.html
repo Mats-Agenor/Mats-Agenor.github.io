@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus Agenor | Academic Website</title>
+  <meta name="description" content="Academic website of Matheus Agenor: research, projects, talks, tutorials, and paper notes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">MA</div>
+        <div>
+          <h1>Matheus Agenor</h1>
+          <p class="tagline">Physics · Astrophysics · Numerical Modelling</p>
+        </div>
+      </div>
+
+      <nav class="side-nav" aria-label="Primary navigation">
+        <button class="nav-link active" data-tab="home">Presentation</button>
+        <button class="nav-link" data-tab="projects">Projects</button>
+        <button class="nav-link" data-tab="talks">Selected Talks</button>
+        <button class="nav-link" data-tab="tutorials">Tutorials</button>
+        <button class="nav-link" data-tab="papers">Papers</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> your.email@example.com</li>
+          <li><strong>GitHub:</strong> github.com/yourusername</li>
+          <li><strong>CV:</strong> add a PDF link here</li>
+          <li><strong>ORCID:</strong> add your profile</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-note">
+        <p>This template is intentionally academic, minimal, and easy to edit for GitHub Pages.</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="home" class="tab-panel active">
+        <div class="hero">
+          <div class="hero-text">
+            <p class="eyebrow">Academic Website</p>
+            <h2>Research, computation, and scientific communication.</h2>
+            <p class="lead">
+              I am Matheus Agenor, a physics student and researcher interested in astrophysics,
+              computational modelling, galaxy evolution, and scientific software development.
+              This website gathers short introductions to my work, selected presentations, tutorials,
+              and notes on papers that I find relevant.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects-anchor" class="button">View Projects</a>
+              <a href="#papers-anchor" class="button secondary">Read Paper Notes</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Research Interests</h3>
+            <ul>
+              <li>Galaxy evolution and interactions</li>
+              <li>Hydrodynamical simulations</li>
+              <li>Subgrid models for the ISM</li>
+              <li>Numerical methods and scientific computing</li>
+              <li>Astrophysical data analysis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>About Me</h3>
+            <p>
+              Use this section for a short academic biography: your institution, degree program,
+              current interests, and the main questions that guide your work.
+            </p>
+            <p>
+              A good version usually includes one concise paragraph about your background and one
+              paragraph about your present projects and future goals.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Current Focus</h3>
+            <p>
+              You can summarize your current lines of work here, for example:
+            </p>
+            <ul class="bullet-list">
+              <li>Interstellar medium modelling in cosmological or isolated galaxy simulations</li>
+              <li>Numerical implementations in GADGET-4, AREPO, SWIFT, or related codes</li>
+              <li>Photometric and dynamical studies of stellar systems</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="card full">
+          <h3>News / Updates</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">[Add date]</span>
+              <p>Added a new tutorial on simulation setup and compilation workflows.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">[Add date]</span>
+              <p>Uploaded a new talk summary and updated the projects section.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">[Add date]</span>
+              <p>Published a new reading note in the papers section.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="projects" class="tab-panel">
+        <div class="section-header" id="projects-anchor">
+          <p class="eyebrow">Research Portfolio</p>
+          <h2>Projects</h2>
+          <p>Each project opens into a text block with a short explanation, methods, and goals.</p>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-toggle">
+            <span>NEW_ISM: modular ISM / star formation / feedback path</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              A modular implementation path for interstellar medium physics, star formation, and
+              stellar feedback in large hydrodynamical simulation codes. The goal is to preserve
+              legacy models while enabling a cleaner, physically motivated, and production-style
+              alternative path.
+            </p>
+            <p>
+              This project involves code architecture, snapshot I/O design, chemistry and cooling
+              backends, timestep consistency, MPI-safe workflows, and validation against controlled
+              physical tests.
+            </p>
+          </div>
+
+          <button class="accordion-toggle">
+            <span>Galaxy interaction analysis in simulation data</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              A research effort focused on extracting orbital, kinematic, and structural diagnostics
+              from simulation snapshots. This includes merger history tracking, pericentric passage
+              identification, gas and stellar mass evolution, and robust visualization of time series.
+            </p>
+          </div>
+
+          <button class="accordion-toggle">
+            <span>Photometric and chemo-dynamical study of Sagittarius</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              A project dedicated to studying stellar populations and metallicity structure in the
+              Sagittarius system using narrow-band photometry and complementary dynamical information.
+              This line of work connects observations, stellar population diagnostics, and theoretical
+              expectations from disruption models.
+            </p>
+          </div>
+
+          <button class="accordion-toggle">
+            <span>Scientific software for transport and KMC simulations</span>
+            <span class="plus">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              Development of kinetic Monte Carlo tools for charge transport, photogeneration,
+              degradation, memory effects, and time-dependent observables in coarse-grained
+              materials models. The emphasis is on physically interpretable structure, modularity,
+              and reproducible output.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="talks" class="tab-panel">
+        <div class="section-header">
+          <p class="eyebrow">Communication</p>
+          <h2>Selected Talks & Presentations</h2>
+          <p>Add your academic presentations here with title, venue, date, and a short abstract.</p>
+        </div>
+
+        <div class="talks-list">
+          <article class="talk-card">
+            <div class="talk-meta">[Year] · [Institution / Event]</div>
+            <h3>Title of Presentation</h3>
+            <p>
+              A short summary of the talk, the problem addressed, the methods used, and the main
+              conclusion or motivation.
+            </p>
+          </article>
+
+          <article class="talk-card">
+            <div class="talk-meta">[Year] · [Seminar / Workshop]</div>
+            <h3>Title of Presentation</h3>
+            <p>
+              You may also add links here to slides, posters, or recorded talks.
+            </p>
+          </article>
+
+          <article class="talk-card">
+            <div class="talk-meta">[Year] · [Conference]</div>
+            <h3>Title of Presentation</h3>
+            <p>
+              This section works well with a concise and consistent format across all entries.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tutorials" class="tab-panel">
+        <div class="section-header">
+          <p class="eyebrow">Resources</p>
+          <h2>Tutorials</h2>
+          <p>The tutorial section includes sub-tabs so you can organize material by code or topic.</p>
+        </div>
+
+        <div class="subtabs" aria-label="Tutorial categories">
+          <button class="subtab-link active" data-subtab="gadget">GADGET</button>
+          <button class="subtab-link" data-subtab="arepo">AREPO</button>
+          <button class="subtab-link" data-subtab="swift">SWIFT</button>
+          <button class="subtab-link" data-subtab="analysis">Analysis</button>
+        </div>
+
+        <div class="subtab-panel active" id="gadget">
+          <div class="tutorial-grid">
+            <article class="card">
+              <h3>Compiling GADGET on Linux</h3>
+              <p>
+                Add a concise guide on dependencies, compilation flags, MPI/HDF5 setup, and
+                common build errors.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Adding a New Physics Module</h3>
+              <p>
+                Use this space to document architecture decisions, file-level changes, and test
+                strategies for new modules.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="subtab-panel" id="arepo">
+          <div class="tutorial-grid">
+            <article class="card">
+              <h3>Setting up AREPO runs</h3>
+              <p>
+                Write a practical walkthrough on parameter files, IC preparation, build options,
+                and snapshot interpretation.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Yield tables and cooling workflows</h3>
+              <p>
+                Add notes on HDF5 tables, path conventions, and debugging common runtime issues.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="subtab-panel" id="swift">
+          <div class="tutorial-grid">
+            <article class="card">
+              <h3>SWIFT: first steps</h3>
+              <p>
+                Explain installation, dependencies, example problems, and the structure of relevant
+                physics modules.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="subtab-panel" id="analysis">
+          <div class="tutorial-grid">
+            <article class="card">
+              <h3>Scientific plotting and diagnostics</h3>
+              <p>
+                Add practical notes on generating figures, validating outputs, and organizing
+                reproducible analysis pipelines.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Working with HDF5 snapshots</h3>
+              <p>
+                Use this area for inspection scripts, common pitfalls, and data model notes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="papers" class="tab-panel">
+        <div class="section-header" id="papers-anchor">
+          <p class="eyebrow">Reading Notes</p>
+          <h2>Papers</h2>
+          <p>
+            This section is organized like a small academic blog for discussing papers, methods,
+            assumptions, and possible extensions.
+          </p>
+        </div>
+
+        <div class="blog-list">
+          <article class="blog-card">
+            <div class="blog-date">[Month Year]</div>
+            <h3>Paper Note Title</h3>
+            <p>
+              Write a compact note explaining what the paper studies, why it matters, what the key
+              physical or numerical ingredients are, and how it connects to your own work.
+            </p>
+            <a href="#" class="text-link">Read note</a>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-date">[Month Year]</div>
+            <h3>Paper Note Title</h3>
+            <p>
+              A good entry usually includes context, the central method, main results, limitations,
+              and questions for future work.
+            </p>
+            <a href="#" class="text-link">Read note</a>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-date">[Month Year]</div>
+            <h3>Paper Note Title</h3>
+            <p>
+              You can later turn each entry into its own HTML page or keep them as short notes on
+              the homepage.
+            </p>
+            <a href="#" class="text-link">Read note</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
