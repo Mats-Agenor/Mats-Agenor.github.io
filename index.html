@@ -1,225 +1,346 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matheus Agenor | Academic Website</title>
-  <meta name="description" content="Academic website of Matheus Agenor: research, projects, talks, tutorials, and paper notes." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Matheus Agenor | My Website</title>
+<meta content="Academic website of Matheus Agenor: research, projects, talks, tutorials, and paper notes." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .home-figure-stack {
+      display: grid;
+      gap: 1.25rem;
+      align-content: start;
+    }
+
+    .feature-figure {
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 18px;
+      padding: 0.9rem;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .feature-figure img,
+    .paper-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .feature-figure figcaption,
+    .paper-figure figcaption {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #475569;
+    }
+
+    .feature-figure strong,
+    .paper-figure strong {
+      color: #0f172a;
+    }
+
+    .card-stack {
+      display: grid;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .hero {
+      align-items: start;
+    }
+
+    .hero-text {
+      display: grid;
+      align-content: start;
+    }
+
+    .paper-figure {
+      margin: 1rem 0 1.5rem 0;
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 18px;
+      padding: 0.9rem;
+    }
+
+    .paper-note-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .paper-note-grid .mini-note {
+      padding: 1rem 1.1rem;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .paper-note-grid .mini-note h4 {
+      margin-bottom: 0.35rem;
+      font-size: 1rem;
+    }
+
+    .reading-queue {
+      margin-top: 1.5rem;
+      padding: 1.2rem 1.25rem;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .reading-queue ul {
+      margin: 0.75rem 0 0 1.15rem;
+    }
+
+    .reading-queue li + li {
+      margin-top: 0.45rem;
+    }
+
+    @media (max-width: 960px) {
+      .home-figure-stack {
+        margin-top: 1.5rem;
+      }
+    }
+  
+    .paper-figure {
+      margin: 1rem auto 1.5rem;
+      max-width: 50%;
+    }
+
+    .paper-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .paper-figure figcaption {
+      margin-top: 0.55rem;
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    @media (max-width: 900px) {
+      .paper-figure {
+        max-width: 100%;
+      }
+    }
+</style>
 </head>
 <body>
-  <div class="site-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-mark">MA</div>
-        <div>
-          <h1>Matheus Agenor</h1>
-          <p class="tagline">Physics · Astrophysics · Numerical Modelling</p>
-        </div>
-      </div>
-
-      <nav class="side-nav" aria-label="Primary navigation">
-        <button class="nav-link active" data-tab="home">Presentation</button>
-        <button class="nav-link" data-tab="projects">Projects</button>
-        <button class="nav-link" data-tab="talks">Selected Talks</button>
+<div class="site-shell">
+<aside class="sidebar">
+<div class="brand">
+<div class="brand-mark">MA</div>
+<div>
+<h1>Matheus Agenor</h1>
+<p class="tagline">MSc Student in Astrophysics</p>
+</div>
+</div>
+<nav aria-label="Primary navigation" class="side-nav">
+<button class="nav-link active" data-tab="home">Presentation</button>
+<button class="nav-link" data-tab="projects">Projects</button>
+<button class="nav-link" data-tab="talks">Selected Talks</button>
+<!--
         <button class="nav-link" data-tab="tutorials">Tutorials</button>
-        <button class="nav-link" data-tab="papers">Papers</button>
-      </nav>
-
-      <div class="sidebar-card">
-        <h3>Contact</h3>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> your.email@example.com</li>
-          <li><strong>GitHub:</strong> github.com/yourusername</li>
-          <li><strong>CV:</strong> add a PDF link here</li>
-          <li><strong>ORCID:</strong> add your profile</li>
-        </ul>
-      </div>
-
-      <div class="sidebar-note">
-        <p>This template is intentionally academic, minimal, and easy to edit for GitHub Pages.</p>
-      </div>
-    </aside>
-
-    <main class="content">
-      <section id="home" class="tab-panel active">
-        <div class="hero">
-          <div class="hero-text">
-            <p class="eyebrow">Academic Website</p>
-            <h2>Research, computation, and scientific communication.</h2>
-            <p class="lead">
-              I am Matheus Agenor, a physics student and researcher interested in astrophysics,
-              computational modelling, galaxy evolution, and scientific software development.
-              This website gathers short introductions to my work, selected presentations, tutorials,
-              and notes on papers that I find relevant.
+        -->
+<button class="nav-link" data-tab="papers">Papers</button>
+</nav>
+<div class="sidebar-card">
+<h3>Contact</h3>
+<ul class="contact-list">
+<li>
+<strong>Email:</strong>
+<a href="mailto:agenor.math@gmail.com">agenor.math@gmail.com</a>
+</li>
+<li>
+<strong>GitHub:</strong>
+<a href="https://github.com/Mats-Agenor" rel="noopener" target="_blank">github.com/Mats-Agenor</a>
+</li>
+<li>
+<strong>CV:</strong>
+<a href="https://drive.google.com/file/d/1F6uB24o6xT7NnqEJnRYLuzPEm368gAFy/view?usp=drive_link" rel="noopener" target="_blank">
+              View CV
+            </a>
+</li>
+<li>
+<strong>ORCID:</strong>
+<a href="https://orcid.org/0009-0004-7116-1490" rel="noopener" target="_blank">
+              0009-0004-7116-1490
+            </a>
+</li>
+</ul>
+</div>
+</aside>
+<main class="content">
+<section class="tab-panel active" id="home">
+<div class="hero">
+<div class="hero-text">
+<p class="eyebrow">Academic Website</p>
+<h2>Researcher</h2>
+<p class="lead">
+              I am Matheus Agenor, an astrophysics student and researcher interested in Galactic
+              Archaeology, computational modelling, galaxy formation, galaxy evolution, and their
+              environments. This website gathers short introductions to my work, selected
+              presentations, tutorials, and notes on papers that I find relevant.
             </p>
-            <div class="hero-actions">
-              <a href="#projects-anchor" class="button">View Projects</a>
-              <a href="#papers-anchor" class="button secondary">Read Paper Notes</a>
-            </div>
-          </div>
-
-          <div class="hero-card">
-            <h3>Research Interests</h3>
-            <ul>
-              <li>Galaxy evolution and interactions</li>
-              <li>Hydrodynamical simulations</li>
-              <li>Subgrid models for the ISM</li>
-              <li>Numerical methods and scientific computing</li>
-              <li>Astrophysical data analysis</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="grid two">
-          <article class="card">
-            <h3>About Me</h3>
-            <p>
-              Use this section for a short academic biography: your institution, degree program,
-              current interests, and the main questions that guide your work.
-            </p>
-            <p>
-              A good version usually includes one concise paragraph about your background and one
-              paragraph about your present projects and future goals.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Current Focus</h3>
-            <p>
-              You can summarize your current lines of work here, for example:
-            </p>
-            <ul class="bullet-list">
-              <li>Interstellar medium modelling in cosmological or isolated galaxy simulations</li>
-              <li>Numerical implementations in GADGET-4, AREPO, SWIFT, or related codes</li>
-              <li>Photometric and dynamical studies of stellar systems</li>
-            </ul>
-          </article>
-        </div>
-
-        <article class="card full">
-          <h3>News / Updates</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span class="timeline-date">[Add date]</span>
-              <p>Added a new tutorial on simulation setup and compilation workflows.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">[Add date]</span>
-              <p>Uploaded a new talk summary and updated the projects section.</p>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-date">[Add date]</span>
-              <p>Published a new reading note in the papers section.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section id="projects" class="tab-panel">
-        <div class="section-header" id="projects-anchor">
-          <p class="eyebrow">Research Portfolio</p>
-          <h2>Projects</h2>
-          <p>Each project opens into a text block with a short explanation, methods, and goals.</p>
-        </div>
-
-        <div class="accordion">
-          <button class="accordion-toggle">
-            <span>NEW_ISM: modular ISM / star formation / feedback path</span>
-            <span class="plus">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>
+<div class="hero-actions">
+<a class="button" href="#projects-anchor">View Projects</a>
+<a class="button secondary" href="#papers-anchor">Read Paper Notes</a>
+</div>
+<div class="card-stack">
+<article class="card">
+<h3>About Me</h3>
+<p>
+                  I completed my undergraduate degree in Physics (2021 to 2025) at São Paulo State
+                  University (UNESP), where I worked on galaxy dynamics and evolution.
+                </p>
+<p>
+                  I am currently an MSc student in Astrophysics at the National Institute for Space
+                  Research (INPE), working in Galactic Archaeology, with particular focus on the
+                  Sagittarius system.
+                </p>
+</article>
+<article class="card">
+<h3>Current Focus</h3>
+<p>
+                  My current work combines observational and numerical approaches to understand galaxy
+                  evolution across different environments and scales.
+                </p>
+<ul class="bullet-list">
+<li>Photometric and dynamical studies of the Sagittarius system</li>
+<li>Cosmological simulations</li>
+<li>Isolated galaxy modelling</li>
+<li>InterStellar Medium modeling</li>
+<li>Galactic astronomy</li>
+<li>Extralactic astronomy</li>
+<li>Computational astronomy</li>
+</ul>
+</article>
+</div>
+</div>
+<div aria-label="Featured paper figures" class="home-figure-stack">
+<figure class="feature-figure">
+<img alt="Presentation at a scientific event." src="assets/exibicao.png"/>
+</figure>
+<figure class="feature-figure">
+<img alt="Presenting posters on galaxy simulations." src="assets/eu.jpeg"/>
+<figcaption>
+                Me presenting my two posters on galaxy simulations to my future master's supervisor,
+                <a href="https://www.astrofelipe.com/index.html" rel="noopener" target="_blank">
+                  Felipe Almeida-Fernandes
+                </a>.
+              </figcaption>
+</figure>
+</div>
+</div>
+<article class="card full">
+<h3>News / Updates</h3>
+<div class="timeline">
+<div class="timeline-item">
+<span class="timeline-date">[14/04]</span>
+<p>A brief discussion of Springel et al. 2020. Go check it out.</p>
+</div>
+</div></article>
+</section>
+<section class="tab-panel" id="projects">
+<div class="section-header" id="projects-anchor">
+<p class="eyebrow">Research Portfolio</p>
+<h2>Projects</h2>
+<p>Each project opens into a text block with a short explanation, methods, and goals.</p>
+</div>
+<div class="accordion">
+<button class="accordion-toggle">
+<span>NEW_ISM: modular ISM / star formation / feedback path</span>
+<span class="plus">+</span>
+</button>
+<div class="accordion-panel">
+<p>
               A modular implementation path for interstellar medium physics, star formation, and
               stellar feedback in large hydrodynamical simulation codes. The goal is to preserve
               legacy models while enabling a cleaner, physically motivated, and production-style
               alternative path.
             </p>
-            <p>
+<p>
               This project involves code architecture, snapshot I/O design, chemistry and cooling
               backends, timestep consistency, MPI-safe workflows, and validation against controlled
               physical tests.
             </p>
-          </div>
-
-          <button class="accordion-toggle">
-            <span>Galaxy interaction analysis in simulation data</span>
-            <span class="plus">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>
-              A research effort focused on extracting orbital, kinematic, and structural diagnostics
-              from simulation snapshots. This includes merger history tracking, pericentric passage
-              identification, gas and stellar mass evolution, and robust visualization of time series.
+</div>
+<button class="accordion-toggle">
+<span>Galaxy interaction analysis in simulations</span>
+<span class="plus">+</span>
+</button>
+<div class="accordion-panel">
+<p>
+              This project focuses on the direct comparison of galaxy interactions in cosmological
+              and idealized simulations, with emphasis on how orbital configuration, gas content,
+              and subgrid prescriptions affect star formation histories and structural evolution.
             </p>
-          </div>
-
-          <button class="accordion-toggle">
-            <span>Photometric and chemo-dynamical study of Sagittarius</span>
-            <span class="plus">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>
-              A project dedicated to studying stellar populations and metallicity structure in the
-              Sagittarius system using narrow-band photometry and complementary dynamical information.
-              This line of work connects observations, stellar population diagnostics, and theoretical
-              expectations from disruption models.
+</div>
+<button class="accordion-toggle">
+<span>Photometric and chemo-dynamical study of Sagittarius</span>
+<span class="plus">+</span>
+</button>
+<div class="accordion-panel">
+<p>
+              This research investigates the Sagittarius system through photometric and dynamical
+              methods, connecting stellar populations, chemical trends, and orbital evolution in
+              order to better understand the assembly history of the Milky Way.
             </p>
-          </div>
-
-          <button class="accordion-toggle">
-            <span>Scientific software for transport and KMC simulations</span>
-            <span class="plus">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>
-              Development of kinetic Monte Carlo tools for charge transport, photogeneration,
-              degradation, memory effects, and time-dependent observables in coarse-grained
-              materials models. The emphasis is on physically interpretable structure, modularity,
-              and reproducible output.
+</div>
+</div>
+</section>
+<section class="tab-panel" id="talks">
+<div class="section-header">
+<p class="eyebrow">Communication</p>
+<h2>Selected Talks &amp; Presentations</h2>
+<p>Some selected presentations related to galaxy dynamics, simulations, and astrophysical modelling.</p>
+</div>
+<div class="talks-list">
+<article class="talk-card">
+<div class="talk-meta">[2025] · [Galaxy Memoirs: Inferring their past from their present]</div>
+<h3>Comparison of dark matter profiles in HSB and LSB galaxies</h3>
+<p>
+              In this work, I studied how dark matter is distributed in the centres of LSB and HSB
+              galaxies by comparing core-cusp profiles using rotation curves and Bayesian evidence.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="talks" class="tab-panel">
-        <div class="section-header">
-          <p class="eyebrow">Communication</p>
-          <h2>Selected Talks & Presentations</h2>
-          <p>Add your academic presentations here with title, venue, date, and a short abstract.</p>
-        </div>
-
-        <div class="talks-list">
-          <article class="talk-card">
-            <div class="talk-meta">[Year] · [Institution / Event]</div>
-            <h3>Title of Presentation</h3>
-            <p>
-              A short summary of the talk, the problem addressed, the methods used, and the main
-              conclusion or motivation.
+</article>
+<article class="talk-card">
+<div class="talk-meta">[2025] · [XLVIII Reunião Anual da Sociedade Astronômica Brasileira]</div>
+<h3>Minor and major mergers: When is star formation triggered?</h3>
+<p>
+              In this work, we performed N-body + hydro simulations seeking to isolate which
+              parameters in galaxy interactions impact the star formation history, comparing
+              cosmological and idealized simulations with an effective subgrid model.
             </p>
-          </article>
-
-          <article class="talk-card">
-            <div class="talk-meta">[Year] · [Seminar / Workshop]</div>
-            <h3>Title of Presentation</h3>
-            <p>
-              You may also add links here to slides, posters, or recorded talks.
+</article>
+<article class="talk-card">
+<div class="talk-meta">[2025] · [XLVIII Reunião Anual da Sociedade Astronômica Brasileira]</div>
+<h3>Study of the Dynamic Evolution of Comet 12P/Pons-Brooks</h3>
+<p>
+              In this work, we simulated the orbital evolution of comet 12P, seeking to analyse
+              its close encounters and isolate the chaotic behaviour associated with the dynamical system.
             </p>
-          </article>
-
-          <article class="talk-card">
-            <div class="talk-meta">[Year] · [Conference]</div>
-            <h3>Title of Presentation</h3>
-            <p>
-              This section works well with a concise and consistent format across all entries.
+</article>
+<article class="talk-card">
+<div class="talk-meta">[2025] · [Course]</div>
+<h3>Numerical Simulations in Astrophysics</h3>
+<p>
+              Lectures given on the use of numerical integrators such as RK4, Leapfrog, and IAS15
+              in dynamical N-body simulations applied to the Solar System and galaxies.
             </p>
-          </article>
-        </div>
-      </section>
-
+</article>
+</div>
+</section>
+<!--
       <section id="tutorials" class="tab-panel">
         <div class="section-header">
           <p class="eyebrow">Resources</p>
@@ -229,7 +350,7 @@
 
         <div class="subtabs" aria-label="Tutorial categories">
           <button class="subtab-link active" data-subtab="gadget">GADGET</button>
-          <button class="subtab-link" data-subtab="arepo">AREPO</button>
+          <button class="subtab-link" data-subtab="arepo">Arepo</button>
           <button class="subtab-link" data-subtab="swift">SWIFT</button>
           <button class="subtab-link" data-subtab="analysis">Analysis</button>
         </div>
@@ -237,17 +358,21 @@
         <div class="subtab-panel active" id="gadget">
           <div class="tutorial-grid">
             <article class="card">
-              <h3>Compiling GADGET on Linux</h3>
+              <h3>Compiling GADGET-4</h3>
               <p>
-                Add a concise guide on dependencies, compilation flags, MPI/HDF5 setup, and
-                common build errors.
+                Add a concise guide on dependencies, compilation flags, MPI/HDF5 setup, and common build errors.
               </p>
             </article>
             <article class="card">
-              <h3>Adding a New Physics Module</h3>
+              <h3>IC for GADGET-4</h3>
               <p>
-                Use this space to document architecture decisions, file-level changes, and test
-                strategies for new modules.
+                Use this space to document how to use galstep to generate ICs for GADGET-4.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Running a simulation</h3>
+              <p>
+                Use this space to document how to configure a minimal <code>param.txt</code> for GADGET-4.
               </p>
             </article>
           </div>
@@ -256,16 +381,21 @@
         <div class="subtab-panel" id="arepo">
           <div class="tutorial-grid">
             <article class="card">
-              <h3>Setting up AREPO runs</h3>
+              <h3>Compiling Arepo</h3>
               <p>
-                Write a practical walkthrough on parameter files, IC preparation, build options,
-                and snapshot interpretation.
+                Add a concise guide on dependencies, compilation flags, MPI/HDF5 setup, and common build errors.
               </p>
             </article>
             <article class="card">
-              <h3>Yield tables and cooling workflows</h3>
+              <h3>IC for Arepo</h3>
               <p>
-                Add notes on HDF5 tables, path conventions, and debugging common runtime issues.
+                Use this space to document how to use galstep to generate or modify ICs for Arepo.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Running a simulation</h3>
+              <p>
+                Use this space to document how to configure a minimal <code>param.txt</code> for Arepo.
               </p>
             </article>
           </div>
@@ -274,10 +404,21 @@
         <div class="subtab-panel" id="swift">
           <div class="tutorial-grid">
             <article class="card">
-              <h3>SWIFT: first steps</h3>
+              <h3>Compiling SWIFT</h3>
               <p>
-                Explain installation, dependencies, example problems, and the structure of relevant
-                physics modules.
+                Add a concise guide on dependencies, compilation flags, MPI/HDF5 setup, and common build errors.
+              </p>
+            </article>
+            <article class="card">
+              <h3>IC for SWIFT</h3>
+              <p>
+                Use this space to document how to use galstep to generate ICs for SWIFT.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Running a simulation</h3>
+              <p>
+                Use this space to document how to configure a minimal <code>param.yml</code> for SWIFT.
               </p>
             </article>
           </div>
@@ -288,8 +429,7 @@
             <article class="card">
               <h3>Scientific plotting and diagnostics</h3>
               <p>
-                Add practical notes on generating figures, validating outputs, and organizing
-                reproducible analysis pipelines.
+                Add practical notes on generating figures, validating outputs, and organizing reproducible analysis pipelines.
               </p>
             </article>
             <article class="card">
@@ -298,55 +438,512 @@
                 Use this area for inspection scripts, common pitfalls, and data model notes.
               </p>
             </article>
+            <article class="card">
+              <h3>Working with TNG simulations</h3>
+              <p>
+                Use this area for inspection scripts, common pitfalls, and data model notes.
+              </p>
+            </article>
           </div>
         </div>
       </section>
+-->
 
-      <section id="papers" class="tab-panel">
-        <div class="section-header" id="papers-anchor">
-          <p class="eyebrow">Reading Notes</p>
-          <h2>Papers</h2>
-          <p>
-            This section is organized like a small academic blog for discussing papers, methods,
-            assumptions, and possible extensions.
-          </p>
-        </div>
 
-        <div class="blog-list">
-          <article class="blog-card">
-            <div class="blog-date">[Month Year]</div>
-            <h3>Paper Note Title</h3>
-            <p>
-              Write a compact note explaining what the paper studies, why it matters, what the key
-              physical or numerical ingredients are, and how it connects to your own work.
-            </p>
-            <a href="#" class="text-link">Read note</a>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-date">[Month Year]</div>
-            <h3>Paper Note Title</h3>
-            <p>
-              A good entry usually includes context, the central method, main results, limitations,
-              and questions for future work.
-            </p>
-            <a href="#" class="text-link">Read note</a>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-date">[Month Year]</div>
-            <h3>Paper Note Title</h3>
-            <p>
-              You can later turn each entry into its own HTML page or keep them as short notes on
-              the homepage.
-            </p>
-            <a href="#" class="text-link">Read note</a>
-          </article>
-        </div>
-      </section>
-    </main>
+<section class="tab-panel" id="papers">
+  <div class="section-header" id="papers-anchor">
+    <p class="eyebrow">Reading Notes</p>
+    <h2>Papers</h2>
+    <p>
+      Here I keep short notes on papers that are especially relevant to my work in
+      computational astrophysics, galaxy formation, and numerical methods. The list
+      starts with the most recent papers and moves downward toward the older
+      foundations they build on.
+    </p>
   </div>
 
-  <script src="script.js"></script>
+  <div class="blog-list">
+
+    <article class="blog-card" id="paper-jahn-2021">
+      <div class="blog-date">October 2021</div>
+      <h3>Real and Counterfeit Cores: How Feedback Expands Halos and Disrupts Tracers of Inner Gravitational Potential in Dwarf Galaxies</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2110.00142" target="_blank" rel="noopener">arXiv:2110.00142</a>
+      </p>
+      <p>
+        This is one of the clearest papers in this reading list for separating agreement in
+        broad galaxy-scale observables from fidelity to the actual baryonic cycle operating in
+        the inner halo. Using idealized dwarf-galaxy simulations with the moving-mesh code
+        AREPO, the authors show that the SMUGGLE model can generate dark-matter cores,
+        whereas runs based on the older <a href="#paper-sh03-2002">Springel &amp; Hernquist (2003)</a>
+        effective model remain cuspy under the same initial conditions. The main value of the
+        paper is that it does not reduce the comparison to a simple “better versus worse”
+        statement; instead, it asks which physical ingredients are required for a bursty,
+        time-variable baryonic cycle capable of modifying the central potential.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/jahn2021_fig3.png" alt="Jahn et al. 2021 figure showing core diagnostics and star-formation history.">
+        <figcaption>
+          A representative diagnostic from Jahn et al. (2021), combining inner-slope evolution,
+          core-size indicators, and star-formation history to show why stellar tracers do not
+          provide a trivial one-to-one signature of cusp-core transformation.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-marinacci-2019">Marinacci et al. (2019)</a>,
+        <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>, and
+        <a href="#paper-sh03-2002">SH03</a>, this paper makes a methodological point that is
+        highly relevant for subgrid work: reproducing some integrated observables does not by
+        itself guarantee that the unresolved ISM and feedback cycle are being represented with
+        the physical detail required for questions such as halo-core formation.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2110.00142" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-gadget4-2021">
+      <div class="blog-date">August 2021</div>
+      <h3>Simulating Cosmic Structure Formation with the GADGET-4 Code</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2010.03567" target="_blank" rel="noopener">arXiv:2010.03567</a>
+      </p>
+      <p>
+        GADGET-4 is best read as the modern public synthesis of the long GADGET lineage. The
+        paper is not only about performance or software engineering; it also consolidates
+        developments in gravity, adaptivity, time integration, parallelization, and
+        hydrodynamics that emerged over nearly two decades of community use. In that sense, it
+        functions both as a code paper and as a historical summary of how numerical priorities
+        changed as simulations became larger and physically more ambitious.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/gadget4_2021_fig57.png" alt="GADGET-4 benchmark figure from the Santa Barbara cluster comparison.">
+        <figcaption>
+          The Santa Barbara cluster benchmark is a meaningful figure to keep because it connects
+          the modern code to one of the classic community validation tests in computational
+          cosmology.
+        </figcaption>
+      </figure>
+      <p>
+        In dialogue with <a href="#paper-hopkins-psph-2012">Hopkins (2012)</a>,
+        <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, and
+        <a href="#paper-gadget-2001">GADGET (2001)</a>, the paper is especially interesting
+        because it preserves continuity with the traditional SPH lineage while also absorbing
+        lessons from later critiques of mixing and contact discontinuities. For anyone working
+        with public simulation codes, GADGET-4 is therefore important both technically and
+        conceptually.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2010.03567" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-arepo-public-2020">
+      <div class="blog-date">May 2020</div>
+      <h3>The Arepo Public Code Release</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1909.04667" target="_blank" rel="noopener">arXiv:1909.04667</a>
+      </p>
+      <p>
+        This paper matters less because it introduces a new physical ingredient and more because
+        it turns an influential numerical framework into a documented public platform. AREPO had
+        already become central to methodological discussions after the original moving-mesh
+        paper, but the public release changes the status of the method from a reference in the
+        literature to a tool that can actually be adopted, tested, compared, and extended by a
+        wider community.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/arepo_public_2020_fig15.png" alt="AREPO public release isolated merger figure.">
+        <figcaption>
+          A representative galaxy-scale application from the public release, useful because it
+          shows the class of isolated and merger problems that the published module set is
+          designed to handle in practice.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-marinacci-2019">Marinacci et al. (2019)</a>,
+        <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>, and
+        <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>, this paper marks the
+        maturation of the moving-mesh program from numerical proposal to public research
+        infrastructure. It is also an important counterpoint to the public GADGET lineage
+        represented by <a href="#paper-gadget2-2005">GADGET-2</a>.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1909.04667" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-marinacci-2019">
+      <div class="blog-date">September 2019</div>
+      <h3>Simulating the Interstellar Medium and Stellar Feedback on a Moving Mesh: Implementation and Isolated Galaxies</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1905.08806" target="_blank" rel="noopener">arXiv:1905.08806</a>
+      </p>
+      <p>
+        This paper is especially useful because it separates two questions that are often mixed
+        together in discussions of subgrid models. The first is whether a model reproduces broad
+        integrated observables such as stellar-mass growth and the global star-formation
+        history. The second is whether it generates an interstellar medium whose structure,
+        phase distribution, and feedback cycle look physically plausible. Marinacci et al. show
+        clearly that these two issues are related, but not equivalent.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/marinacci-2019-fig9.png" alt="Marinacci et al. 2019 comparison of ISM morphology in explicit-feedback and SH03 runs.">
+        <figcaption>
+          One of the most informative comparisons in the paper: the explicit-feedback model
+          produces a far more structured and vertically extended ISM than the SH03 run, with
+          cavities, fountains, and a much less artificially smooth gas distribution.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>,
+        <a href="#paper-hopkins-psph-2012">Hopkins (2012)</a>,
+        <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>,
+        <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>, and
+        <a href="#paper-sh03-2002">SH03</a>, this paper becomes a particularly strong reference
+        for the distinction between effective regulation and realistic ISM structure. A galaxy
+        may evolve reasonably at the integrated level while still representing the unresolved
+        gas cycle in a very different physical manner.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1905.08806" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-lupi-2018">
+      <div class="blog-date">August 2018</div>
+      <h3>H2 Chemistry in Galaxy Simulations: an Improved Supernova Feedback Model</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1808.10184" target="_blank" rel="noopener">arXiv:1808.10184</a>
+      </p>
+      <p>
+        This paper is especially valuable because it does not judge feedback only by its ability
+        to suppress the star-formation rate. Instead, it asks what the feedback prescription
+        does to the thermo-chemical state of the dense ISM, especially to the molecular phase.
+        That is the correct question when the goal is not only regulation, but also a physically
+        interpretable connection between feedback, cooling, and H<sub>2</sub> chemistry.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/lupi-2018-fig10.png" alt="Lupi et al. 2018 Kennicutt-Schmidt and depletion-time comparison for different feedback models.">
+        <figcaption>
+          A compact summary of the paper’s main trade-off: different feedback models can regulate
+          the galaxy differently, but they also leave distinct signatures in the molecular-gas
+          content and depletion times.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-keller-2014">Keller et al. (2014)</a>,
+        <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, and
+        <a href="#paper-stinson-2006">Stinson et al. (2006)</a>, this paper is a strong reminder
+        that “good global regulation” is not sufficient by itself. A feedback model may produce
+        acceptable integrated behaviour while distorting the cold molecular phase in ways that
+        are hard to interpret physically.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1808.10184" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-keller-2014">
+      <div class="blog-date">May 2014</div>
+      <h3>A Superbubble Feedback Model for Galaxy Simulations</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1405.2625" target="_blank" rel="noopener">arXiv:1405.2625</a>
+      </p>
+      <p>
+        Keller et al. push the feedback discussion beyond isolated supernova events and toward
+        clustered stellar feedback, emphasizing that unresolved feedback regions should not be
+        treated as single-phase parcels. The superbubble model is attractive because it tries to
+        preserve the hot interior and the evaporation of colder material into that bubble,
+        rather than relying on a purely artificial cooling switch.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/keller-2014-fig12.png" alt="Keller et al. 2014 Kennicutt-Schmidt comparison for the superbubble model.">
+        <figcaption>
+          A representative diagnostic from Keller et al. (2014): the superbubble model is not
+          only morphologically appealing, but also moves the simulated disc toward a more
+          realistic star-formation law.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>,
+        <a href="#paper-stinson-2006">Stinson et al. (2006)</a>, and
+        <a href="#paper-sh03-2002">SH03</a>, this paper is best understood as a phase-structure
+        paper. Its main point is that the unresolved hot bubble should retain physical meaning,
+        because that hot phase is central to how feedback vents out of the disc and regulates
+        star formation.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1405.2625" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-vogelsberger-2013">
+      <div class="blog-date">December 2013</div>
+      <h3>A Model for Cosmological Simulations of Galaxy Formation Physics</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1305.2913" target="_blank" rel="noopener">arXiv:1305.2913</a>
+      </p>
+      <p>
+        Vogelsberger et al. present a galaxy-formation model built for cosmological simulations
+        with a modern hydrodynamical solver, combining radiative cooling, enrichment, stellar
+        feedback, black-hole growth, and AGN feedback in a unified framework. What makes the
+        paper especially useful is that it does not present the model only as a technical recipe;
+        it evaluates the resulting galaxy population against a broad suite of observables.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/vogelsberger2013_fig7.png" alt="Vogelsberger et al. 2013 stellar-mass-halo-mass relation figure.">
+        <figcaption>
+          One of the key validation figures in the paper: the stellar-mass–halo-mass relation
+          changes substantially once the full feedback model is activated, showing why this work
+          became so important for the later Illustris lineage.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>,
+        <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, and
+        <a href="#paper-sh03-2002">SH03</a>, this paper illustrates a broader shift in the
+        field: from effective star-formation regulation alone toward larger, more modular
+        galaxy-formation frameworks calibrated against several observables at once.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1305.2913" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-hopkins-psph-2012">
+      <div class="blog-date">June 2012</div>
+      <h3>A General Class of Lagrangian Smoothed Particle Hydrodynamics Methods and Implications for Fluid Mixing Problems</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1206.5006" target="_blank" rel="noopener">arXiv:1206.5006</a>
+      </p>
+      <p>
+        This paper is one of the key responses to the criticism that traditional SPH
+        formulations have difficulty with fluid mixing, contact discontinuities, and some
+        instability problems. Rather than abandoning SPH, Hopkins derives a broader
+        Lagrangian framework that preserves conservation while improving the treatment of
+        interfaces. It is therefore important not only for the results it produces, but also
+        for the way it reconstructs the equations themselves.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/hopkins2012_fig6.png" alt="Hopkins 2012 Kelvin-Helmholtz comparison illustrating pressure-entropy SPH.">
+        <figcaption>
+          A representative Kelvin–Helmholtz comparison, included because it directly visualizes
+          the mixing problem that motivated pressure-entropy SPH.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a> and
+        <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, this paper is best seen as a
+        methodological answer to the growing realization that some “physical” differences
+        between galaxy simulations could in fact originate in the hydrodynamical formulation
+        itself.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1206.5006" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-dalla-vecchia-schaye-2012">
+      <div class="blog-date">March 2012</div>
+      <h3>Simulating Galactic Outflows with Thermal Supernova Feedback</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1203.5667" target="_blank" rel="noopener">arXiv:1203.5667</a>
+      </p>
+      <p>
+        This is one of the cleanest papers in the feedback literature because it identifies the
+        numerical problem with unusual precision. Thermal feedback often fails not because
+        thermal energy is intrinsically unphysical, but because the injected energy is spread
+        over too much mass. The resulting temperature jump is too small, the cooling time is
+        too short, and the feedback energy is radiated away before it can do dynamical work.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/dalla-vecchia-schaye-2012-fig1.png" alt="Dalla Vecchia and Schaye 2012 figure comparing sound-crossing and cooling times after heating.">
+        <figcaption>
+          The conceptual core of the paper: the comparison between sound-crossing and cooling
+          times shows when thermal feedback can convert injected energy into motion instead of
+          losing it immediately to radiation.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-gadget2-2005">GADGET-2 (2005)</a> and
+        <a href="#paper-sh03-2002">SH03</a>, this paper remains a foundational reference for
+        making thermal feedback numerically viable without turning cooling off by hand. Even
+        when one prefers mechanical or multiphase approaches, it is still essential for
+        understanding why naive thermal injection so often fails.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1203.5667" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-code-comparison-2011">
+      <div class="blog-date">June 2011</div>
+      <h3>Comparisons of Different Codes for Galactic N-body Simulations</h3>
+      <p class="paper-ref">Athanassoula et al. 2011, <em>A&amp;A</em>, 531, A120</p>
+      <p>
+        Although this paper is focused on gravity solvers and pure N-body applications rather
+        than baryonic subgrid physics, it is very useful for placing widely used astrophysical
+        codes in a broader numerical ecosystem. The comparison is valuable precisely because it
+        asks not only whether different methods can run, but how they differ in memory use,
+        timing, scaling, and dynamical accuracy for the same class of problems.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/athanassoula2011_fig8.png" alt="Athanassoula et al. 2011 comparison figure for galactic N-body codes.">
+        <figcaption>
+          A representative code-comparison diagnostic, emphasizing that different numerical
+          architectures should be compared through force and phase-space behaviour, not only by
+          visual morphology.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-gadget2-2005">GADGET-2 (2005)</a> and
+        <a href="#paper-gadget-2001">GADGET (2001)</a>, this paper reinforces an important
+        practical point: before comparing subgrid physics, one often has to ask whether the
+        underlying code architecture is well suited to the scientific problem in the first place.
+      </p>
+    </article>
+
+    <article class="blog-card" id="paper-arepo-movingmesh-2009">
+      <div class="blog-date">October 2009</div>
+      <h3>E pur si muove: Galilean-invariant Cosmological Hydrodynamical Simulations on a Moving Mesh</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/0901.4107" target="_blank" rel="noopener">arXiv:0901.4107</a>
+      </p>
+      <p>
+        This paper is one of the major turning points in computational hydrodynamics for
+        astrophysics. Springel proposes a moving-mesh finite-volume method based on a Voronoi
+        tessellation and a Godunov scheme, with the explicit goal of combining the adaptivity of
+        Lagrangian methods with the shock-capturing strengths of Eulerian approaches. The paper
+        is motivated by limitations that had become increasingly visible in both traditional SPH
+        and fixed-grid methods.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/springel2010_arepo_fig34.png" alt="Springel 2009 AREPO Kelvin-Helmholtz comparison.">
+        <figcaption>
+          The classic Kelvin–Helmholtz comparison from the original AREPO paper, still one of
+          the clearest visual demonstrations of why moving-mesh methods attracted so much
+          attention.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-gadget2-2005">GADGET-2 (2005)</a> and
+        <a href="#paper-sh03-2002">SH03</a>, this paper is important because it changes the
+        solver itself, and therefore changes the context in which later discussions of galaxy
+        formation and subgrid realism must be interpreted.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/0901.4107" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-stinson-2006">
+      <div class="blog-date">February 2006</div>
+      <h3>Star Formation and Feedback in Smoothed Particle Hydrodynamic Simulations I: Isolated Galaxies</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/astro-ph/0602350" target="_blank" rel="noopener">arXiv:astro-ph/0602350</a>
+      </p>
+      <p>
+        This paper is a classic because it helped define the blastwave-feedback style that
+        became highly influential in SPH galaxy simulations. The preferred model does not merely
+        inject stronger feedback in an arbitrary sense; it temporarily suppresses cooling inside
+        the unresolved remnant, motivated by Sedov–Taylor and snowplow evolution, so that the
+        feedback remains dynamically important for long enough to alter the disc.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/stinson-2006-fig19.png" alt="Stinson et al. 2006 isolated galaxy morphology under blastwave feedback.">
+        <figcaption>
+          A representative morphology comparison showing the practical impact of the blastwave
+          model: the disc becomes more structured, turbulent, and vertically extended than in
+          weaker local-feedback runs.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-gadget2-2005">GADGET-2 (2005)</a> and
+        <a href="#paper-sh03-2002">SH03</a>, this paper is best understood as a historically
+        successful workaround for unresolved remnant evolution. Later work would question the
+        physical cost of the imposed cooling shutoff, but this paper remains fundamental for
+        understanding why that family of models became so widely used.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/astro-ph/0602350" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-gadget2-2005">
+      <div class="blog-date">May 2005</div>
+      <h3>The Cosmological Simulation Code GADGET-2</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/astro-ph/0505010" target="_blank" rel="noopener">arXiv:astro-ph/0505010</a>
+      </p>
+      <p>
+        GADGET-2 marks the consolidation of the GADGET family into one of the most widely used
+        public codes in cosmological simulation work. The paper presents a massively parallel
+        TreeSPH code with adaptive time-stepping, TreePM gravity, and an entropy-conserving SPH
+        formulation. Beyond performance, what made the code so influential is that it provided a
+        scalable public framework that could host a very broad range of physical modules.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/gadget2_2005_fig16.png" alt="GADGET-2 hydrodynamic test figure.">
+        <figcaption>
+          A representative hydrodynamic test from GADGET-2, useful because it shows that the
+          code’s importance went well beyond gravity-only cosmological applications.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-sh03-2002">SH03</a> and
+        <a href="#paper-gadget-2001">GADGET (2001)</a>, this paper can be seen as the point
+        where a promising numerical platform became the standard technical home for a large
+        fraction of later galaxy-formation modeling.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/astro-ph/0505010" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-sh03-2002">
+      <div class="blog-date">June 2002</div>
+      <h3>Cosmological SPH Simulations: A Hybrid Multi-phase Model for Star Formation</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/astro-ph/0206393" target="_blank" rel="noopener">arXiv:astro-ph/0206393</a>
+      </p>
+      <p>
+        Springel and Hernquist introduce one of the most influential effective models for the
+        unresolved interstellar medium in cosmological simulations. Star-forming gas is treated
+        as a hybrid multiphase medium in which cold clouds, hot ambient gas, cooling,
+        supernova heating, evaporation, enrichment, and winds are coupled through a subgrid
+        equilibrium framework. Its importance lies in providing a practical way to model star
+        formation and feedback when the true small-scale ISM structure is far below the
+        numerical resolution.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/springel_hernquist2003_fig1.png" alt="Springel and Hernquist 2003 effective multiphase model diagram.">
+        <figcaption>
+          The effective multiphase construction at the heart of SH03: above the density
+          threshold, unresolved star-forming gas is replaced by a pressurized equilibrium model
+          coupled to a star-formation law.
+        </figcaption>
+      </figure>
+      <p>
+        Built on the computational framework established by <a href="#paper-gadget-2001">GADGET
+        (2001)</a>, SH03 became foundational because it showed how an effective ISM model could
+        deliver self-regulated star formation in large cosmological runs. It is exactly this
+        success, however, that later made it such an important target of critique in papers
+        concerned with burstiness, multiphase structure, and feedback realism.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/astro-ph/0206393" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+    <article class="blog-card" id="paper-gadget-2001">
+      <div class="blog-date">May 2001</div>
+      <h3>GADGET: A Code for Collisionless and Gasdynamical Cosmological Simulations</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/astro-ph/0003162" target="_blank" rel="noopener">arXiv:astro-ph/0003162</a>
+      </p>
+      <p>
+        This is the natural starting point of the sequence. Springel, Yoshida, and White
+        present GADGET as a public Tree+SPH code designed for cosmological structure formation
+        and interacting galaxies, combining collisionless N-body dynamics and gas hydrodynamics
+        in a massively parallel framework. The emphasis on adaptive timesteps, dynamic range,
+        and public release was historically important because it helped define what a modern
+        community code in computational cosmology could look like.
+      </p>
+      <figure class="paper-figure">
+        <img src="assets/papers/gadget2001_fig11.png" alt="GADGET 2001 scaling and performance figure.">
+        <figcaption>
+          A representative scaling result from the first GADGET paper, included because
+          parallel performance was already a central design concern in the code’s earliest
+          public formulation.
+        </figcaption>
+      </figure>
+      <p>
+        In retrospect, this paper is valuable not only for its algorithms, but because it
+        establishes the platform on top of which much of the later story unfolds. In that
+        sense, GADGET (2001) is less a final answer than the opening chapter of a long
+        numerical lineage in galaxy-formation simulations.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/astro-ph/0003162" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
+  </div>
+</section></main>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
