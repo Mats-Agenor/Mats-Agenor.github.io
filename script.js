@@ -5,12 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach((button) => {
     button.addEventListener('click', () => {
       const target = button.dataset.tab;
-
       navLinks.forEach((link) => link.classList.remove('active'));
       tabPanels.forEach((panel) => panel.classList.remove('active'));
-
       button.classList.add('active');
-
       const panel = document.getElementById(target);
       if (panel) panel.classList.add('active');
     });
