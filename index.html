@@ -549,11 +549,12 @@
         wider community.
       </p>
       <figure class="paper-figure">
-        <img src="arepo_public_2020_fig15.png" alt="AREPO public release isolated merger figure.">
+        <img src="arepo_public_2020_fig2.png" alt="Diagram of the Voronoi mesh in a single domain and its connections to neighboring domains.">
         <figcaption>
-          A representative galaxy-scale application from the public release, useful because it
-          shows the class of isolated and merger problems that the published module set is
-          designed to handle in practice.
+          The main revolution introduced by AREPO is the use of a moving mesh, in which the domain 
+          is discretized into Voronoi cells constructed from a Delaunay triangulation. 
+          This approach naturally combines the advantages of Eulerian methods, such as good shock capture and spatial resolution,
+          with Lagrangian properties, such as adaptivity and flow tracking.
         </figcaption>
       </figure>
       <p>
@@ -723,7 +724,9 @@
         <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, this paper is best seen as a
         methodological answer to the growing realization that some “physical” differences
         between galaxy simulations could in fact originate in the hydrodynamical formulation
-        itself.
+        itself. It is interesting to note that, as early as 2001, Volker Springel and collaborators 
+        had discussed the possibility of using this methodology to solve hydrodynamic equations (<a href="#paper-gadget-2001">Springel et al (2001); 
+        however, it was only in 2009 that it became feasible to implement a complete code based on this concept.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1206.5006" target="_blank" rel="noopener">Read paper</a>
     </article>
