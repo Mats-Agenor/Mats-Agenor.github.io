@@ -151,7 +151,7 @@
 <!--
         <button class="nav-link" data-tab="tutorials">Tutorials</button>
         -->
-<button class="nav-link" data-tab="Reading Notes">Reading Notes</button>
+<button class="nav-link" data-tab="reading-notes">Reading Notes</button>
 </nav>
 <div class="sidebar-card">
 <h3>Contact</h3>
@@ -192,8 +192,8 @@
               presentations, tutorials, and notes on Reading Notes that I find relevant.
             </p>
 <div class="hero-actions">
-<a class="button" href="#projects-anchor">View Projects</a>
-<a class="button secondary" href="#Reading Notes-anchor">Read Paper Notes</a>
+<button class="button" type="button" onclick="document.querySelector('.side-nav .nav-link[data-tab=&quot;projects&quot;]').click();">View Projects</button>
+<button class="button secondary" type="button" onclick="document.querySelector('.side-nav .nav-link[data-tab=&quot;reading-notes&quot;]').click();">Read Paper Notes</button>
 </div>
 <div class="card-stack">
 <article class="card">
@@ -448,9 +448,8 @@
       </section>
 -->
 
-
-<section class="tab-panel" id="Reading Notes">
-  <div class="section-header" id="Reading Notes-anchor">
+<section class="tab-panel" id="reading-notes">
+  <div class="section-header" id="reading-notes-anchor">
     <p class="eyebrow">Reading Notes</p>
     <h2>Reading Notes</h2>
     <p>
@@ -723,8 +722,8 @@
         <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, this paper is best seen as a
         methodological answer to the growing realization that some “physical” differences
         between galaxy simulations could in fact originate in the hydrodynamical formulation
-        itself. It is interesting to note that, as early as 2001, Volker Springel and collaborators 
-        had discussed the possibility of using this methodology to solve hydrodynamic equations (<a href="#paper-gadget-2001">Springel et al (2001); 
+        itself. It is interesting to note that, as early as 2001, Volker Springel and collaborators
+        had discussed the possibility of using this methodology to solve hydrodynamic equations (<a href="#paper-gadget-2001">Springel et al (2001)</a>);
         however, it was only in 2009 that it became feasible to implement a complete code based on this concept.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1206.5006" target="_blank" rel="noopener">Read paper</a>
