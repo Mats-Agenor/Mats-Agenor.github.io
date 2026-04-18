@@ -399,3 +399,13 @@ a {
     font-size: 2rem;
   }
 }
+
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+}
+.button {
+  display: inline-block;
+  text-decoration: none;
+}

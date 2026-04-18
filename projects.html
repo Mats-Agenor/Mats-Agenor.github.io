@@ -1,3 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Matheus Agenor | My Website</title>
+<meta content="Academic website of Matheus Agenor: research, projects, talks, tutorials, and paper notes." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .home-figure-stack {
+      display: grid;
+      gap: 1.25rem;
+      align-content: start;
+    }
+
+    .feature-figure {
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 18px;
+      padding: 0.9rem;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .feature-figure img,
+    .paper-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .feature-figure figcaption,
+    .paper-figure figcaption {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #475569;
+    }
+
+    .feature-figure strong,
+    .paper-figure strong {
+      color: #0f172a;
+    }
+
+    .card-stack {
+      display: grid;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .hero {
+      align-items: start;
+    }
+
+    .hero-text {
+      display: grid;
+      align-content: start;
+    }
+
+    .paper-figure {
+      margin: 1rem 0 1.5rem 0;
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 18px;
+      padding: 0.9rem;
+    }
+
+    .paper-note-grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .paper-note-grid .mini-note {
+      padding: 1rem 1.1rem;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .paper-note-grid .mini-note h4 {
+      margin-bottom: 0.35rem;
+      font-size: 1rem;
+    }
+
+    .reading-queue {
+      margin-top: 1.5rem;
+      padding: 1.2rem 1.25rem;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .reading-queue ul {
+      margin: 0.75rem 0 0 1.15rem;
+    }
+
+    .reading-queue li + li {
+      margin-top: 0.45rem;
+    }
+
+    @media (max-width: 960px) {
+      .home-figure-stack {
+        margin-top: 1.5rem;
+      }
+    }
+  
+    .paper-figure {
+      margin: 1rem auto 1.5rem;
+      max-width: 50%;
+    }
+
+    .paper-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .paper-figure figcaption {
+      margin-top: 0.55rem;
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    @media (max-width: 900px) {
+      .paper-figure {
+        max-width: 100%;
+      }
+    }
+</style>
+</head>
+<body>
+<div class="site-shell">
+<aside class="sidebar">
+<div class="brand">
+<div class="brand-mark">MA</div>
+<div>
+<h1>Matheus Agenor</h1>
+<p class="tagline">MSc Student in Astrophysics</p>
+</div>
+</div>
+<nav aria-label="Primary navigation" class="side-nav">
+<a class="nav-link" href="index.html">Presentation</a>
+<a class="nav-link active" href="projects.html">Projects</a>
+<a class="nav-link" href="talks.html">Selected Talks</a>
+<a class="nav-link" href="tutorials.html">Tutorials</a>
+<a class="nav-link" href="reading-notes.html">Reading Notes</a>
+</nav>
+<div class="sidebar-card">
+<h3>Contact</h3>
+<ul class="contact-list">
+<li>
+<strong>Email:</strong>
+<a href="mailto:agenor.math@gmail.com">agenor.math@gmail.com</a>
+</li>
+<li>
+<strong>GitHub:</strong>
+<a href="https://github.com/Mats-Agenor" rel="noopener" target="_blank">github.com/Mats-Agenor</a>
+</li>
+<li>
+<strong>CV:</strong>
+<a href="https://drive.google.com/file/d/1F6uB24o6xT7NnqEJnRYLuzPEm368gAFy/view?usp=drive_link" rel="noopener" target="_blank">
+              View CV
+            </a>
+</li>
+<li>
+<strong>ORCID:</strong>
+<a href="https://orcid.org/0009-0004-7116-1490" rel="noopener" target="_blank">
+              0009-0004-7116-1490
+            </a>
+</li>
+</ul>
+</div>
+</aside>
+<main class="content">
 <section class="tab-panel" id="projects">
 <div class="section-header" id="projects-anchor">
 <p class="eyebrow">Research Portfolio</p>
@@ -45,3 +225,8 @@
 </div>
 </div>
 </section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

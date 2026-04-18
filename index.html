@@ -145,13 +145,11 @@
 </div>
 </div>
 <nav aria-label="Primary navigation" class="side-nav">
-<button class="nav-link active" data-tab="home">Presentation</button>
-<button class="nav-link" data-tab="projects">Projects</button>
-<button class="nav-link" data-tab="talks">Selected Talks</button>
-<!--
-        <button class="nav-link" data-tab="tutorials">Tutorials</button>
-        -->
-<button class="nav-link" data-tab="reading-notes">Reading Notes</button>
+<a class="nav-link active" href="index.html">Presentation</a>
+<a class="nav-link" href="projects.html">Projects</a>
+<a class="nav-link" href="talks.html">Selected Talks</a>
+<a class="nav-link" href="tutorials.html">Tutorials</a>
+<a class="nav-link" href="reading-notes.html">Reading Notes</a>
 </nav>
 <div class="sidebar-card">
 <h3>Contact</h3>
@@ -180,7 +178,76 @@
 </div>
 </aside>
 <main class="content">
-<div id="tab-content"></div>
+<section class="tab-panel active" id="home">
+<div class="hero">
+<div class="hero-text">
+<p class="eyebrow">Academic Website</p>
+<h2>Researcher</h2>
+<p class="lead">
+              I am Matheus Agenor, an astrophysics student and researcher interested in Galactic
+              Archaeology, computational modelling, galaxy formation, galaxy evolution, and their
+              environments. This website gathers short introductions to my work, selected
+              presentations, tutorials, and notes on Reading Notes that I find relevant.
+            </p>
+<div class="hero-actions">
+<a class="button" href="projects.html">View Projects</a>
+<a class="button secondary" href="reading-notes.html">Read Paper Notes</a>
+</div>
+<div class="card-stack">
+<article class="card">
+<h3>About Me</h3>
+<p>
+                  I completed my undergraduate degree in Physics (2021 to 2025) at São Paulo State
+                  University (UNESP), where I worked on galaxy dynamics and evolution.
+                </p>
+<p>
+                  I am currently an MSc student in Astrophysics at the National Institute for Space
+                  Research (INPE), working in Galactic Archaeology, with particular focus on the
+                  Sagittarius system.
+                </p>
+</article>
+<article class="card">
+<h3>Current Focus</h3>
+<p>
+                  My current work combines observational and numerical approaches to understand galaxy
+                  evolution across different environments and scales.
+                </p>
+<ul class="bullet-list">
+<li>Photometric and dynamical studies of the Sagittarius system</li>
+<li>Cosmological simulations</li>
+<li>Isolated galaxy modelling</li>
+<li>InterStellar Medium modeling</li>
+<li>Galactic astronomy</li>
+<li>Extralactic astronomy</li>
+<li>Computational astronomy</li>
+</ul>
+</article>
+</div>
+</div>
+<div aria-label="Featured paper figures" class="home-figure-stack">
+<figure class="feature-figure">
+<img alt="Presentation at a scientific event." src="exibicao.png"/>
+</figure>
+<figure class="feature-figure">
+<img alt="Presenting posters on galaxy simulations." src="eu.jpeg"/>
+<figcaption>
+                Me presenting my two posters on galaxy simulations to my future master's supervisor,
+                <a href="https://www.astrofelipe.com/index.html" rel="noopener" target="_blank">
+                  Felipe Almeida-Fernandes
+                </a>.
+              </figcaption>
+</figure>
+</div>
+</div>
+<article class="card full">
+<h3>News / Updates</h3>
+<div class="timeline">
+<div class="timeline-item">
+<span class="timeline-date">[14/04]</span>
+<p>A brief discussion of Springel et al. 2020. Go check it out.</p>
+</div>
+</div></article>
+</section>
 </main>
 </div>
 <script src="script.js"></script>
