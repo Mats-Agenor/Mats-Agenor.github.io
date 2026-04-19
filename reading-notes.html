@@ -177,294 +177,333 @@
 </ul>
 </div>
 </aside>
+
 <main class="content">
 <section class="tab-panel active" id="reading-notes">
   <div class="section-header" id="reading-notes-anchor">
     <p class="eyebrow">Reading Notes</p>
     <h2>Reading Notes</h2>
     <p>
-      Here I keep short notes on Reading Notes that are especially relevant to my work in
+      Here I keep short notes on papers that are especially relevant to my work in
       computational astrophysics, galaxy formation, and numerical methods. The list
-      starts with the most recent Reading Notes and moves downward toward the older
-      foundations they build on.
+      starts with the most recent papers and moves downward toward older foundations
+      that still shape the way I think about simulations, feedback, and Galactic structure.
     </p>
   </div>
 
   <div class="blog-list">
+
     <article class="blog-card" id="paper-too-big-to-quench-2026">
-  <div class="blog-date">April 2026</div>
-  <h3>Too Big to Quench? The Role of AGN Feedback, Halo Mass, and Galaxy Structure in Preventing Environmental Quenching</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2604.07613" target="_blank" rel="noopener">arXiv:2604.07613</a>
-  </p>
-  <p>
-    This paper is useful because it pushes the quenching discussion away from a single-cause picture.
-    Instead of treating environment as an all-purpose explanation, the authors show that internal
-    structure, halo mass, and AGN activity strongly modulate whether a galaxy can actually be shut down.
-    The result is a more conditional view of quenching, in which morphology and halo-scale energetics help
-    determine how effective environmental processes can be.
-  </p>
-  <figure class="paper-figure">
-    <img src="2026_too_big_to_quench.png" alt="Comparison of quenched fractions as a function of stellar mass and environment in Too Big to Quench.">
-    <figcaption>
-      The figure compares quenched fractions across galaxy mass and environment. The key point is that the
-      curves do not move in parallel: massive or structurally concentrated systems remain hard to quench,
-      which makes the title question visually clear.
-    </figcaption>
-  </figure>
-  <p>
-    Read together with <a href="#paper-galactism-2024">GalactISM (2024)</a>,
-    <a href="#paper-tango-2020">Tango for Three (2020)</a>, and
-    <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a>, this note fits well with the
-    broader theme already present on the page: global outcomes often depend on how several physical channels
-    couple together, not on a single mechanism acting in isolation.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2604.07613" target="_blank" rel="noopener">Read paper</a>
-</article>
+      <div class="blog-date">April 2026</div>
+      <h3>Too Big to Quench? I. Constraining ISM Stripping of Dwarf Satellites in Milky Way-like Halos</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2604.07613" target="_blank" rel="noopener">arXiv:2604.07613</a>
+      </p>
+      <p>
+        This paper is useful because it reframes environmental quenching in dwarf satellites as a
+        problem of gas retention under ram-pressure stripping, rather than as a generic shutdown
+        mechanism with a single outcome. Using idealized wind-tunnel experiments for dwarfs moving
+        through Milky Way-like halos, the authors show that the efficiency of stripping depends
+        strongly on satellite mass. Below a transition scale, stripping can remove the ISM much
+        more efficiently, whereas more massive systems retain a denser central gas reservoir and are
+        therefore harder to quench through stripping alone.
+      </p>
+      <figure class="paper-figure">
+        <img src="2026_too_big_to_quench.png" alt="Gas stripping histories for dwarf satellites with different masses in Too Big to Quench.">
+        <figcaption>
+          This figure follows the response of several dwarf models to ram pressure in a Milky
+          Way-like halo. The top panel shows how the imposed ram pressure varies along the orbit,
+          while the lower panels track the evolution of gas mass and gas fraction. What stands out
+          is the strong mass dependence: the lightest systems are stripped much more efficiently,
+          while the more massive models retain a substantial central reservoir.
+        </figcaption>
+      </figure>
+      <p>
+        Read together with <a href="#paper-galactism-2024">GalactISM (2024)</a>,
+        <a href="#paper-tango-2020">Tango for Three (2020)</a>, and
+        <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a>, this note fits well
+        with a broader theme already present on the page: global outcomes depend not only on the
+        surrounding environment, but also on which gas phase is being removed and on whether the
+        galaxy is massive enough to hold on to a dense central ISM.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2604.07613" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-bulge-quenching-2026">
-  <div class="blog-date">February 2026</div>
-  <h3>What Suppresses Star Formation in Bulge-dominated Early-type Galaxies?</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2602.12324" target="_blank" rel="noopener">arXiv:2602.12324</a>
-  </p>
-  <p>
-    This paper matters because it focuses on a question that is often answered too quickly in galaxy-formation
-    discussions: whether low star-formation rates in bulge-dominated systems follow directly from morphology,
-    or whether the bulge is only part of a larger balance involving gas supply, heating, and feedback.
-    The argument is especially interesting because it keeps the structural interpretation connected to the gas cycle
-    instead of treating morphology as a purely descriptive label.
-  </p>
-  <figure class="paper-figure">
-    <img src="2026_bulge_quenching.png" alt="Figure from the bulge quenching paper showing star-formation suppression across structural indicators.">
-    <figcaption>
-      The figure tracks how star-formation activity changes with structural diagnostics linked to bulge growth.
-      What the reader should notice is that the suppression is strongest where central concentration is highest,
-      but the trend is not perfectly one-dimensional, pointing to additional control by the surrounding gas reservoir.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-galactism-2024">GalactISM (2024)</a> and in the longer feedback context of
-    <a href="#paper-jahn-2021">Jahn et al. (2021)</a>, this note extends a recurring pattern on the page:
-    matching a quenched or regulated state is less informative than understanding which internal cycle actually produced it.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2602.12324" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-bulge-quenching-2026">
+      <div class="blog-date">February 2026</div>
+      <h3>What Suppresses Star Formation in Bulge-Dominated Early-Type Galaxies?</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2602.12324" target="_blank" rel="noopener">arXiv:2602.12324</a>
+      </p>
+      <p>
+        This paper matters because it focuses on a question that is often answered too quickly in
+        galaxy-formation discussions: whether low star-formation rates in bulge-dominated systems
+        follow directly from morphology, or whether the bulge is only one part of a larger balance
+        involving gas supply, stability, heating, and feedback. The note is interesting because it
+        keeps the structural interpretation connected to the gas cycle instead of treating morphology
+        as a complete explanation by itself.
+      </p>
+      <figure class="paper-figure">
+        <img src="2026_bulge_quenching.png" alt="Figure from the bulge quenching paper showing star-formation suppression across structural indicators.">
+        <figcaption>
+          The figure tracks how star-formation activity changes with structural diagnostics linked to
+          bulge growth. The main point is that stronger central concentration correlates with lower
+          star-formation activity, but the relation is not perfectly one-dimensional, which suggests
+          that gas content and internal regulation still matter.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-galactism-2024">GalactISM (2024)</a> and in the longer feedback
+        context of <a href="#paper-jahn-2021">Jahn et al. (2021)</a>, this note extends a recurring
+        pattern on the page: matching a quenched state is less informative than understanding which
+        physical cycle actually produced it.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2602.12324" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-gastro2-2025">
-  <div class="blog-date">December 2025</div>
-  <h3>GASTRO II. Highly Eccentric Stellar Haloes in Merger Simulations Are Not Necessarily Siblings of the Gaia Sausage/Enceladus</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2512.01293" target="_blank" rel="noopener">arXiv:2512.01293</a>
-  </p>
-  <p>
-    This follow-up is valuable because it turns a tempting identification into a cautionary statement. The paper argues
-    that a very radial stellar halo is not, by itself, enough to claim a direct Gaia Sausage/Enceladus analogue. In other words,
-    orbital anisotropy is informative, but it is not uniquely diagnostic of a specific merger history unless it is interpreted
-    together with the broader structural and temporal context.
-  </p>
-  <figure class="paper-figure">
-    <img src="2025_gastro2_eccentric_haloes.png" alt="Highly eccentric stellar-halo diagnostics from GASTRO II.">
-    <figcaption>
-      The figure compares stellar-halo eccentricity signatures across different merger realizations. The important visual point
-      is that similarly radial debris can emerge from more than one evolutionary route, so the same observable morphology does not
-      map to a unique origin.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-stellar-haloes-gse-2024">Stellar Halos with GSE Analogs (2024)</a> and
-    <a href="#paper-gastro1-2022">GASTRO I (2022)</a>, this paper fits naturally with other notes here that warn against
-    one-to-one interpretations of integrated observables, much in the same spirit in which <a href="#paper-jahn-2021">Jahn et al. (2021)</a>
-    separate broad agreement from genuine physical explanation.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2512.01293" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-gastro2-2025">
+      <div class="blog-date">December 2025</div>
+      <h3>GASTRO library II: Exploring Chemical Bimodalities in Disk Galaxies with GSE-like Mergers and Massive Star-forming Clumps</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2512.01293" target="_blank" rel="noopener">arXiv:2512.01293</a>
+      </p>
+      <p>
+        This follow-up is valuable because it shifts the emphasis from halo morphology to the
+        chemical structure of galactic discs. The paper explores how disk bimodality can emerge in
+        systems that experience GSE-like mergers and strong early clump-driven star formation,
+        making the point that chemical sequences are tied to the broader assembly history rather
+        than to a single simple trigger. That is especially relevant for anyone interested in how
+        merger-driven heating and early enrichment can leave long-lived signatures in abundance space.
+      </p>
+      <figure class="paper-figure">
+        <img src="2025_gastro2_eccentric_haloes.png" alt="Chemical bimodality diagnostics from GASTRO II.">
+        <figcaption>
+          The figure compares how different formation histories populate chemical space in the disc.
+          The important visual point is that bimodality is not just a decorative feature of the
+          abundance plane: it is linked to when and how the galaxy experienced rapid early star
+          formation, clump evolution, and merger-driven restructuring.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-stellar-haloes-gse-2024">Stellar Halos with GSE Analogs (2024)</a>
+        and <a href="#paper-gastro1-2022">GASTRO I (2022)</a>, this paper fits naturally with other
+        notes here that warn against one-to-one interpretations of integrated observables. In this
+        case, the warning applies to chemical structure: similar disc bimodalities can reflect a
+        more complicated early history than a single clean origin story.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2512.01293" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-galactism-2024">
-  <div class="blog-date">September 2024</div>
-  <h3>Learning the Universe: GalactISM as a high-resolution whole-galaxy benchmark for large-scale interstellar medium physics</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2409.09114" target="_blank" rel="noopener">arXiv:2409.09114</a>
-  </p>
-  <p>
-    This paper is important because it reframes the high-resolution galaxy simulation not merely as a science run,
-    but as a benchmark environment for testing ISM physics at scale. That idea is especially attractive for anyone interested
-    in subgrid development: before exporting a model into large cosmological production runs, one wants a controlled setting in
-    which the phase structure, turbulence, cooling, and feedback loop can be inspected in detail.
-  </p>
-  <figure class="paper-figure">
-    <img src="2024_galactism_benchmark.png" alt="GalactISM benchmark figure showing multiphase galaxy structure.">
-    <figcaption>
-      The figure shows the galaxy-wide benchmark in resolved multiphase form, with dense star-forming regions embedded in a much
-      broader turbulent and porous medium. What the reader is seeing is exactly why this setup is useful as a benchmark: local ISM
-      structure and global disc behaviour can be inspected in the same framework.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-superbubble-evolution-2024">The Evolution and Distribution of Superbubbles (2024)</a>,
-    <a href="#paper-limits-sn-feedback-2016">The Limits of Supernova Feedback (2016)</a>, and
-    <a href="#paper-superbubble-feedback-2015">The Superbubble Feedback Model (2015)</a>, this note connects directly to the
-    existing emphasis of the page: reproducing a galaxy is not enough if the unresolved or marginally resolved ISM cycle is not
-    physically interpretable.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2409.09114" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-galactism-2024">
+      <div class="blog-date">September 2024</div>
+      <h3>Learning the Universe: GalactISM simulations of resolved star formation and galactic outflows across main sequence and quenched galactic environments</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2409.09114" target="_blank" rel="noopener">arXiv:2409.09114</a>
+      </p>
+      <p>
+        This paper is important because it reframes the high-resolution galaxy simulation not merely
+        as a science run, but as a benchmark environment for testing ISM physics at scale. That idea
+        is especially attractive for anyone interested in subgrid development: before exporting a
+        model into large cosmological production runs, one wants a controlled setting in which the
+        phase structure, turbulence, cooling, and feedback loop can be inspected in detail.
+      </p>
+      <figure class="paper-figure">
+        <img src="2024_galactism_benchmark.png" alt="GalactISM benchmark figure showing multiphase galaxy structure.">
+        <figcaption>
+          The figure shows the galaxy-wide benchmark in resolved multiphase form, with dense
+          star-forming regions embedded in a much broader turbulent and porous medium. That is
+          exactly why this setup is useful as a benchmark: local ISM structure and global disc
+          behaviour can be inspected within the same framework.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-superbubble-evolution-2024">The Evolution and Distribution of
+        Superbubbles (2024)</a>, <a href="#paper-limits-sn-feedback-2016">The Limits of Supernova
+        Feedback (2016)</a>, and <a href="#paper-superbubble-feedback-2015">Superbubble Feedback I
+        (2015)</a>, this note connects directly to the existing emphasis of the page: reproducing a
+        galaxy is not enough if the unresolved or marginally resolved ISM cycle is not physically
+        interpretable.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2409.09114" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-stellar-haloes-gse-2024">
-  <div class="blog-date">August 2024</div>
-  <h3>Stellar Halos with Two Sausages? The Properties of Milky Way Stellar Halos with Two Gaia Sausage/Enceladus Analogs from the Auriga Simulations</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2408.02723" target="_blank" rel="noopener">arXiv:2408.02723</a>
-  </p>
-  <p>
-    This paper is interesting because it explicitly asks how exceptional the Milky Way may be in merger-history terms.
-    By searching for Auriga systems with two GSE-like contributors, the authors test whether halo structure and debris morphology
-    remain simple to read once merger histories become more crowded. The answer is useful precisely because it complicates the
-    naive picture rather than just reproducing it.
-  </p>
-  <figure class="paper-figure">
-    <img src="2024_two_sausages_auriga.png" alt="Auriga stellar-halo comparison with two GSE-like analogs.">
-    <figcaption>
-      The figure compares halo structure in systems that host more than one GSE-like contributor. The reader is effectively seeing
-      how overlapping merger debris can still produce a halo with strong radial signatures, while making the reconstruction of the
-      underlying assembly history much less straightforward.
-    </figcaption>
-  </figure>
-  <p>
-    Read together with <a href="#paper-gastro1-2022">GASTRO I (2022)</a> and
-    <a href="#paper-tango-2020">Tango for Three (2020)</a>, this note extends a line of thought already present in the page:
-    halo observables are powerful, but they become most convincing when morphology, kinematics, and assembly history are interpreted together.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2408.02723" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-stellar-haloes-gse-2024">
+      <div class="blog-date">August 2024</div>
+      <h3>Cosmological Simulations of Stellar Halos with Gaia Sausage-Enceladus Analogues: Two Sausages, One Bun?</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2408.02723" target="_blank" rel="noopener">arXiv:2408.02723</a>
+      </p>
+      <p>
+        This paper is interesting because it explicitly asks how exceptional the Milky Way may be
+        in merger-history terms. By examining cosmological systems with more than one GSE-like
+        contributor, the authors test whether halo structure and debris morphology remain simple to
+        interpret once the assembly history becomes more crowded. The answer is useful precisely
+        because it complicates the naive picture rather than just reproducing it.
+      </p>
+      <figure class="paper-figure">
+        <img src="2024_two_sausages_auriga.png" alt="Stellar-halo comparison with two GSE-like analogs.">
+        <figcaption>
+          The figure compares halo structure in systems that host more than one GSE-like
+          contributor. What becomes clear is that overlapping merger debris can still produce a halo
+          with strong radial signatures while making the reconstruction of the underlying assembly
+          history much less straightforward.
+        </figcaption>
+      </figure>
+      <p>
+        Read together with <a href="#paper-gastro1-2022">GASTRO I (2022)</a> and
+        <a href="#paper-tango-2020">Tango for Three (2020)</a>, this note extends a line of thought
+        already present on the page: halo observables are powerful, but they become most convincing
+        when morphology, kinematics, and assembly history are interpreted together.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2408.02723" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-superbubble-evolution-2024">
-  <div class="blog-date">March 2024</div>
-  <h3>The Evolution and Distribution of Superbubbles in Simulated Galaxies</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2403.12135" target="_blank" rel="noopener">arXiv:2403.12135</a>
-  </p>
-  <p>
-    This paper is especially useful because it shifts the feedback discussion from injection recipes alone to the actual life cycle
-    of superbubbles inside galaxies. Instead of asking only whether clustered supernovae regulate star formation, the paper asks where
-    superbubbles form, how they grow, and how they populate the ISM. That makes it a strong bridge between local feedback physics and
-    galaxy-scale structure.
-  </p>
-  <figure class="paper-figure">
-    <img src="2024_superbubble_distribution.png" alt="Distribution of superbubbles in simulated galaxies.">
-    <figcaption>
-      The figure maps how superbubbles populate the simulated galaxy and how their sizes or locations are distributed.
-      The visual message is that superbubbles are not rare curiosities: they organize a substantial fraction of the hot,
-      volume-filling medium and therefore matter for the global disc structure.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-limits-sn-feedback-2016">The Limits of Supernova Feedback (2016)</a>,
-    <a href="#paper-superbubble-feedback-2015">The Superbubble Feedback Model (2015)</a>, and
-    <a href="#paper-keller-2014">Keller et al. (2014)</a>, this note meshes very well with the existing feedback sequence on the page,
-    because it treats hot bubbles as resolved or semi-resolved structures with their own spatial ecology, not only as a bookkeeping device.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2403.12135" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-superbubble-evolution-2024">
+      <div class="blog-date">March 2024</div>
+      <h3>Evolution and distribution of superbubbles in simulated Milky Way-like galaxies</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2403.12135" target="_blank" rel="noopener">arXiv:2403.12135</a>
+      </p>
+      <p>
+        This paper is especially useful because it shifts the feedback discussion from injection
+        recipes alone to the actual life cycle of superbubbles inside galaxies. Instead of asking
+        only whether clustered supernovae regulate star formation, the paper asks where
+        superbubbles form, how they grow, and how they populate the ISM. That makes it a strong
+        bridge between local feedback physics and galaxy-scale structure.
+      </p>
+      <figure class="paper-figure">
+        <img src="2024_superbubble_distribution.png" alt="Distribution of superbubbles in simulated galaxies.">
+        <figcaption>
+          The figure maps how superbubbles populate the simulated galaxy and how their sizes or
+          locations are distributed. The visual message is that superbubbles are not rare
+          curiosities: they organize a substantial fraction of the hot, volume-filling medium and
+          therefore matter for the global disc structure.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-limits-sn-feedback-2016">The Limits of Supernova Feedback
+        (2016)</a>, <a href="#paper-superbubble-feedback-2015">Superbubble Feedback I (2015)</a>,
+        and <a href="#paper-keller-2014">Keller et al. (2014)</a>, this note meshes very well with
+        the existing feedback sequence on the page, because it treats hot bubbles as resolved or
+        semi-resolved structures with their own spatial ecology, not only as a bookkeeping device.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2403.12135" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-chemical-cartography-2023">
-  <div class="blog-date">July 2023</div>
-  <h3>Chemical cartography with APOGEE: metal-rich stars in the Sagittarius core and stream</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2307.08730" target="_blank" rel="noopener">arXiv:2307.08730</a>
-  </p>
-  <p>
-    This paper is particularly relevant because it moves the Sagittarius discussion from pure structure into chemo-dynamical detail.
-    By following metal-rich stars across the core and stream, the authors show that the remnant retains a chemically informative memory
-    of its disruption history. That is exactly the kind of result that makes Sagittarius so useful as a bridge between resolved stellar
-    populations and dynamical reconstruction.
-  </p>
-  <figure class="paper-figure">
-    <img src="2023_chemical_cartography_sgr.png" alt="Chemical cartography of metal-rich stars in the Sagittarius core and stream.">
-    <figcaption>
-      The figure shows where chemically selected Sagittarius stars lie across the system and how their metallicity-rich component is distributed.
-      What the reader is seeing is not just a map, but evidence that the core and stream preserve linked chemical structure rather than forming a
-      featureless debris population.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-sgr-phase-space-2022">Phase-space Properties of Sagittarius Debris (2022)</a>,
-    <a href="#paper-tango-2020">Tango for Three (2020)</a>, and
-    <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a>, this note adds the chemical layer that the earlier dynamical notes leave open.
-    It also fits naturally with the way the page moves from numerical methods toward physically interpretable tracers.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2307.08730" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-chemical-cartography-2023">
+      <div class="blog-date">July 2023</div>
+      <h3>Chemical Cartography of the Sagittarius Stream with Gaia</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2307.08730" target="_blank" rel="noopener">arXiv:2307.08730</a>
+      </p>
+      <p>
+        This paper is particularly relevant because it moves the Sagittarius discussion from pure
+        structure into chemo-dynamical detail. By mapping chemical information across the stream
+        with Gaia, the authors show that Sagittarius debris retains informative internal structure
+        rather than behaving like a fully mixed stellar population. That is exactly the kind of
+        result that makes Sagittarius so useful as a bridge between resolved stellar populations and
+        dynamical reconstruction.
+      </p>
+      <figure class="paper-figure">
+        <img src="2023_chemical_cartography_sgr.png" alt="Chemical cartography of the Sagittarius stream with Gaia.">
+        <figcaption>
+          The figure shows how chemically selected Sagittarius stars are distributed across the
+          system. What the reader is seeing is not only a map, but evidence that the stream
+          preserves spatially organized chemical structure that can be used to reconstruct the
+          system's evolution.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-sgr-phase-space-2022">Phase-Space Properties of Sagittarius
+        Debris (2022)</a>, <a href="#paper-tango-2020">Tango for Three (2020)</a>, and
+        <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a>, this note adds the
+        chemical layer that the earlier dynamical notes leave open. It also fits naturally with the
+        way the page moves from numerical methods toward physically interpretable tracers.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2307.08730" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-sgr-phase-space-2022">
-  <div class="blog-date">December 2022</div>
-  <h3>Phase-space Properties of Sagittarius Debris and its Association with Gaia Enceladus</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2212.08249" target="_blank" rel="noopener">arXiv:2212.08249</a>
-  </p>
-  <p>
-    This paper is useful because it treats Sagittarius debris not as an isolated stream problem, but as part of a more crowded halo phase-space.
-    The possible overlap with Gaia Enceladus matters because it complicates simple tagging arguments: debris identification depends on how well one
-    separates structures that were produced by different accretion events but now occupy related regions of integrals-of-motion space.
-  </p>
-  <figure class="paper-figure">
-    <img src="2022_sgr_phase_space.png" alt="Sagittarius debris and Gaia Enceladus comparison in phase space.">
-    <figcaption>
-      The figure places Sagittarius debris and Gaia Enceladus-related populations in phase-space coordinates. The main thing to notice is the partial
-      overlap together with residual separation, which explains why the association is suggestive but not trivial.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-tango-2020">Tango for Three (2020)</a>,
-    <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a>, and
-    <a href="#paper-sgr-lmc-mw-2017">The Influence of Sagittarius and the LMC on the Milky Way (2017)</a>, this note strengthens the existing orbital and structural discussion by adding a more explicit phase-space view of how different accretion histories can become entangled.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2212.08249" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-sgr-phase-space-2022">
+      <div class="blog-date">December 2022</div>
+      <h3>Phase-space Properties and Chemistry of the Sagittarius Stellar Stream Down to the Extremely Metal-poor Regime</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2212.08249" target="_blank" rel="noopener">arXiv:2212.08249</a>
+      </p>
+      <p>
+        This paper is useful because it treats Sagittarius debris not as an isolated stream problem,
+        but as part of a more crowded halo phase space. Extending the analysis down to the
+        extremely metal-poor regime matters because it complicates simple tagging arguments:
+        debris identification depends on how well one separates structures that were produced by
+        different accretion events but now occupy partly related regions of integrals-of-motion
+        space.
+      </p>
+      <figure class="paper-figure">
+        <img src="2022_sgr_phase_space.png" alt="Sagittarius debris comparison in phase space.">
+        <figcaption>
+          The figure places Sagittarius debris in phase-space coordinates while emphasizing its
+          internal chemical spread. The main thing to notice is that the structure is informative
+          but not trivially isolated, which is why the Sagittarius problem cannot be reduced to a
+          single clean selection box.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-tango-2020">Tango for Three (2020)</a>,
+        <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a>, and
+        <a href="#paper-sgr-lmc-mw-2017">The Influence of Sagittarius and the LMC on the Milky Way
+        (2017)</a>, this note strengthens the existing orbital and structural discussion by adding a
+        more explicit phase-space view of how different accretion histories can become entangled.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2212.08249" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-gastro1-2022">
-  <div class="blog-date">April 2022</div>
-  <h3>GASTRO I: What Went Down? The Impact of Gaia Sausage/Enceladus on the Milky Way in Auriga Cosmological Simulations</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2204.12187" target="_blank" rel="noopener">arXiv:2204.12187</a>
-  </p>
-  <p>
-    This paper is a strong reference for connecting merger history to present-day Galactic structure in a cosmological setting.
-    Rather than treating Gaia Sausage/Enceladus as a static fossil, the authors ask what that event actually did to the Milky Way analogue:
-    how it perturbed the disc, influenced the inner halo, and contributed to the broader assembly of the system.
-  </p>
-  <figure class="paper-figure">
-    <img src="2022_gastro1_auriga.png" alt="Auriga simulation figure illustrating the impact of Gaia Sausage Enceladus on Milky Way analogues.">
-    <figcaption>
-      The figure compares Milky Way analogues with different GSE-like merger histories. The reader is seeing how the same broad class of accretion event
-      can leave measurable but not perfectly identical signatures in halo structure and disc response.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-tango-2020">Tango for Three (2020)</a>,
-    <a href="#paper-eagle-2014">The EAGLE Simulations (2014)</a>, and
-    <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>, this note sits nicely at the intersection of two themes already present here:
-    cosmological galaxy-formation modelling and the interpretation of stellar-halo relics as constraints on assembly history.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2204.12187" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-gastro1-2022">
+      <div class="blog-date">April 2022</div>
+      <h3>GASTRO library I: the simulated chemodynamical properties of several GSE-like stellar halos</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2204.12187" target="_blank" rel="noopener">arXiv:2204.12187</a>
+      </p>
+      <p>
+        This paper is a strong reference for connecting merger history to present-day Galactic
+        structure in a cosmological setting. Rather than treating Gaia Sausage/Enceladus as a
+        single static fossil, the authors compare several GSE-like analogues and ask how broadly
+        similar mergers can still generate non-identical chemodynamical outcomes. That makes the
+        paper especially useful for anyone who wants to discuss analogues without pretending that
+        there is only one acceptable realization of a GSE-like event.
+      </p>
+      <figure class="paper-figure">
+        <img src="2022_gastro1_auriga.png" alt="Simulation figure illustrating GSE-like stellar haloes in cosmological analogues.">
+        <figcaption>
+          The figure compares Milky Way analogues with different GSE-like merger histories. The
+          reader is seeing how the same broad class of accretion event can leave measurable but not
+          perfectly identical signatures in halo structure and chemical distribution.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-tango-2020">Tango for Three (2020)</a>,
+        <a href="#paper-eagle-2014">The EAGLE Simulations (2014)</a>, and
+        <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>, this note sits nicely at
+        the intersection of two themes already present here: cosmological galaxy-formation
+        modelling and the interpretation of stellar-halo relics as constraints on assembly history.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2204.12187" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
     <article class="blog-card" id="paper-jahn-2021">
       <div class="blog-date">October 2021</div>
-      <h3>Real and Counterfeit Cores: How Feedback Expands Halos and Disrupts Tracers of Inner Gravitational Potential in Dwarf Galaxies</h3>
+      <h3>Real and counterfeit cores: how feedback expands halos and disrupts tracers of inner gravitational potential in dwarf galaxies</h3>
       <p class="paper-ref">
         <a href="https://arxiv.org/abs/2110.00142" target="_blank" rel="noopener">arXiv:2110.00142</a>
       </p>
       <p>
-        This is one of the clearest Reading Notes in this reading list for separating agreement in
-        broad galaxy-scale observables from fidelity to the actual baryonic cycle operating in
-        the inner halo. Using idealized dwarf-galaxy simulations with the moving-mesh code
-        AREPO, the authors show that the SMUGGLE model can generate dark-matter cores,
-        whereas runs based on the older <a href="#paper-sh03-2002">Springel &amp; Hernquist (2003)</a>
-        effective model remain cuspy under the same initial conditions. The main value of the
-        paper is that it does not reduce the comparison to a simple “better versus worse”
-        statement; instead, it asks which physical ingredients are required for a bursty,
-        time-variable baryonic cycle capable of modifying the central potential.
+        This is one of the clearest papers in this reading list for separating agreement in broad
+        galaxy-scale observables from fidelity to the actual baryonic cycle operating in the inner
+        halo. Using idealized dwarf-galaxy simulations with the moving-mesh code AREPO, the authors
+        show that the SMUGGLE model can generate dark-matter cores, whereas runs based on the older
+        <a href="#paper-sh03-2002">Springel &amp; Hernquist (2003)</a> effective model remain
+        cuspy under the same initial conditions. The main value of the paper is that it does not
+        reduce the comparison to a simple “better versus worse” statement; instead, it asks which
+        physical ingredients are required for a bursty, time-variable baryonic cycle capable of
+        modifying the central potential.
       </p>
       <figure class="paper-figure">
         <img src="jahn2021_fig3.png" alt="Jahn et al. 2021 figure showing core diagnostics and star-formation history.">
@@ -477,10 +516,10 @@
       <p>
         Read after <a href="#paper-marinacci-2019">Marinacci et al. (2019)</a>,
         <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>, and
-        <a href="#paper-sh03-2002">SH03</a>, this paper makes a methodological point that is
-        highly relevant for subgrid work: reproducing some integrated observables does not by
-        itself guarantee that the unresolved ISM and feedback cycle are being represented with
-        the physical detail required for questions such as halo-core formation.
+        <a href="#paper-sh03-2002">SH03</a>, this paper makes a methodological point that is highly
+        relevant for subgrid work: reproducing some integrated observables does not by itself
+        guarantee that the unresolved ISM and feedback cycle are being represented with the
+        physical detail required for questions such as halo-core formation.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/2110.00142" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -492,58 +531,62 @@
         <a href="https://arxiv.org/abs/2010.03567" target="_blank" rel="noopener">arXiv:2010.03567</a>
       </p>
       <p>
-        GADGET-4 is best read as the modern public synthesis of the long GADGET lineage. The
-        paper is not only about performance or software engineering; it also consolidates
-        developments in gravity, adaptivity, time integration, parallelization, and
-        hydrodynamics that emerged over nearly two decades of community use. In that sense, it
-        functions both as a code paper and as a historical summary of how numerical priorities
-        changed as simulations became larger and physically more ambitious.
+        GADGET-4 is best read as the modern public synthesis of the long GADGET lineage. The paper
+        is not only about performance or software engineering; it also consolidates developments in
+        gravity, adaptivity, time integration, parallelization, and hydrodynamics that emerged over
+        nearly two decades of community use. In that sense, it functions both as a code paper and
+        as a historical summary of how numerical priorities changed as simulations became larger and
+        physically more ambitious.
       </p>
       <figure class="paper-figure">
         <img src="gadget4_2021_fig57.png" alt="GADGET-4 benchmark figure from the Santa Barbara cluster comparison.">
         <figcaption>
-          The Santa Barbara cluster benchmark is a meaningful figure to keep because it connects
-          the modern code to one of the classic community validation tests in computational
-          cosmology.
+          The Santa Barbara cluster benchmark is a meaningful figure to keep because it connects the
+          modern code to one of the classic community validation tests in computational cosmology.
         </figcaption>
       </figure>
       <p>
         In dialogue with <a href="#paper-hopkins-psph-2012">Hopkins (2012)</a>,
         <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, and
-        <a href="#paper-gadget-2001">GADGET (2001)</a>, the paper is especially interesting
-        because it preserves continuity with the traditional SPH lineage while also absorbing
-        lessons from later critiques of mixing and contact discontinuities. For anyone working
-        with public simulation codes, GADGET-4 is therefore important both technically and
-        conceptually.
+        <a href="#paper-gadget-2001">GADGET (2001)</a>, the paper is especially interesting because
+        it preserves continuity with the traditional SPH lineage while also absorbing lessons from
+        later critiques of mixing and contact discontinuities. For anyone working with public
+        simulation codes, GADGET-4 is therefore important both technically and conceptually.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/2010.03567" target="_blank" rel="noopener">Read paper</a>
     </article>
 
-   <article class="blog-card" id="paper-tango-2020">
-  <div class="blog-date">September 2020</div>
-  <h3>Tango for Three: Sagittarius, LMC, and the Milky Way as an Interacting System</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/2009.10726" target="_blank" rel="noopener">arXiv:2009.10726</a>
-  </p>
-  <p>
-    This paper is compelling because it rejects the habit of modelling the Milky Way, Sagittarius, and the LMC in pairwise isolation.
-    The main point is dynamical, but its implications are broader: once several massive perturbers act together, debris geometry,
-    orbital backtracking, and even the interpretation of present-day asymmetries become less clean than in two-body narratives.
-  </p>
-  <figure class="paper-figure">
-    <img src="2020_tango_for_three.png" alt="Interacting Sagittarius LMC and Milky Way configuration from Tango for Three.">
-    <figcaption>
-      The figure summarizes the three-body interaction geometry between the Milky Way, Sagittarius, and the LMC.
-      What it makes clear is that the satellites do not perturb the Galaxy independently; their effects overlap in time and reshape each other's orbital imprint.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a> and
-    <a href="#paper-sgr-lmc-mw-2017">The Influence of Sagittarius and the LMC on the Milky Way (2017)</a>, this note deepens the dynamical thread already present on the page by replacing a cleaner satellite-by-satellite picture with a coupled system view.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/2009.10726" target="_blank" rel="noopener">Read paper</a>
-</article>
-      
+    <article class="blog-card" id="paper-tango-2020">
+      <div class="blog-date">September 2020</div>
+      <h3>Tango for Three: Sagittarius, LMC, and the Milky Way</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/2009.10726" target="_blank" rel="noopener">arXiv:2009.10726</a>
+      </p>
+      <p>
+        This paper is compelling because it rejects the habit of modelling the Milky Way,
+        Sagittarius, and the LMC in pairwise isolation. The main point is dynamical, but its
+        implications are broader: once several massive perturbers act together, debris geometry,
+        orbital backtracking, and even the interpretation of present-day asymmetries become less
+        clean than in simple two-body narratives.
+      </p>
+      <figure class="paper-figure">
+        <img src="2020_tango_for_three.png" alt="Interacting Sagittarius LMC and Milky Way configuration from Tango for Three.">
+        <figcaption>
+          The figure summarizes the three-body interaction geometry between the Milky Way,
+          Sagittarius, and the LMC. What it makes clear is that the satellites do not perturb the
+          Galaxy independently; their effects overlap in time and reshape each other's orbital
+          imprint.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-where-gas-2018">Where Did All the Gas Go? (2018)</a> and
+        <a href="#paper-sgr-lmc-mw-2017">The Influence of Sagittarius and the LMC on the Milky Way
+        (2017)</a>, this note deepens the dynamical thread already present on the page by replacing
+        a cleaner satellite-by-satellite picture with a coupled system view.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/2009.10726" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
     <article class="blog-card" id="paper-arepo-public-2020">
       <div class="blog-date">May 2020</div>
       <h3>The Arepo Public Code Release</h3>
@@ -551,29 +594,28 @@
         <a href="https://arxiv.org/abs/1909.04667" target="_blank" rel="noopener">arXiv:1909.04667</a>
       </p>
       <p>
-        This paper matters less because it introduces a new physical ingredient and more because
-        it turns an influential numerical framework into a documented public platform. AREPO had
-        already become central to methodological discussions after the original moving-mesh
-        paper, but the public release changes the status of the method from a reference in the
-        literature to a tool that can actually be adopted, tested, compared, and extended by a
-        wider community.
+        This paper matters less because it introduces a new physical ingredient and more because it
+        turns an influential numerical framework into a documented public platform. AREPO had
+        already become central to methodological discussions after the original moving-mesh paper,
+        but the public release changes the status of the method from a reference in the literature
+        to a tool that can actually be adopted, tested, compared, and extended by a wider community.
       </p>
       <figure class="paper-figure">
         <img src="arepo_public_2020_fig2.png" alt="Diagram of the Voronoi mesh in a single domain and its connections to neighboring domains.">
         <figcaption>
-          The main revolution introduced by AREPO is the use of a moving mesh, in which the domain 
-          is discretized into Voronoi cells constructed from a Delaunay triangulation. 
-          This approach naturally combines the advantages of Eulerian methods, such as good shock capture and spatial resolution,
-          with Lagrangian properties, such as adaptivity and flow tracking.
+          The key idea behind AREPO is the use of a moving mesh, in which the domain is discretized
+          into Voronoi cells and evolved with a finite-volume Godunov scheme. This lets the method
+          combine strengths usually associated with Eulerian shock-capturing and Lagrangian
+          adaptivity.
         </figcaption>
       </figure>
       <p>
         Read after <a href="#paper-marinacci-2019">Marinacci et al. (2019)</a>,
         <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>, and
-        <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>, this paper marks the
-        maturation of the moving-mesh program from numerical proposal to public research
-        infrastructure. It is also an important counterpoint to the public GADGET lineage
-        represented by <a href="#paper-gadget2-2005">GADGET-2</a>.
+        <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>, this paper marks the maturation
+        of the moving-mesh program from numerical proposal to public research infrastructure. It is
+        also an important counterpoint to the public GADGET lineage represented by
+        <a href="#paper-gadget2-2005">GADGET-2</a>.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1909.04667" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -587,10 +629,10 @@
       <p>
         This paper is especially useful because it separates two questions that are often mixed
         together in discussions of subgrid models. The first is whether a model reproduces broad
-        integrated observables such as stellar-mass growth and the global star-formation
-        history. The second is whether it generates an interstellar medium whose structure,
-        phase distribution, and feedback cycle look physically plausible. Marinacci et al. show
-        clearly that these two issues are related, but not equivalent.
+        integrated observables such as stellar-mass growth and the global star-formation history.
+        The second is whether it generates an interstellar medium whose structure, phase
+        distribution, and feedback cycle look physically plausible. Marinacci et al. show clearly
+        that these two issues are related, but not equivalent.
       </p>
       <figure class="paper-figure">
         <img src="marinacci-2019-fig9.png" alt="Marinacci et al. 2019 comparison of ISM morphology in explicit-feedback and SH03 runs.">
@@ -605,10 +647,10 @@
         <a href="#paper-hopkins-psph-2012">Hopkins (2012)</a>,
         <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>,
         <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>, and
-        <a href="#paper-sh03-2002">SH03</a>, this paper becomes a particularly strong reference
-        for the distinction between effective regulation and realistic ISM structure. A galaxy
-        may evolve reasonably at the integrated level while still representing the unresolved
-        gas cycle in a very different physical manner.
+        <a href="#paper-sh03-2002">SH03</a>, this paper becomes a particularly strong reference for
+        the distinction between effective regulation and realistic ISM structure. A galaxy may
+        evolve reasonably at the integrated level while still representing the unresolved gas cycle
+        in a very different physical manner.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1905.08806" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -620,11 +662,11 @@
         <a href="https://arxiv.org/abs/1808.10184" target="_blank" rel="noopener">arXiv:1808.10184</a>
       </p>
       <p>
-        This paper is especially valuable because it does not judge feedback only by its ability
-        to suppress the star-formation rate. Instead, it asks what the feedback prescription
-        does to the thermo-chemical state of the dense ISM, especially to the molecular phase.
-        That is the correct question when the goal is not only regulation, but also a physically
-        interpretable connection between feedback, cooling, and H<sub>2</sub> chemistry.
+        This paper is especially valuable because it does not judge feedback only by its ability to
+        suppress the star-formation rate. Instead, it asks what the feedback prescription does to
+        the thermo-chemical state of the dense ISM, especially to the molecular phase. That is the
+        correct question when the goal is not only regulation, but also a physically interpretable
+        connection between feedback, cooling, and H<sub>2</sub> chemistry.
       </p>
       <figure class="paper-figure">
         <img src="lupi-2018-fig10.png" alt="Lupi et al. 2018 Kennicutt-Schmidt and depletion-time comparison for different feedback models.">
@@ -639,165 +681,204 @@
         <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, and
         <a href="#paper-stinson-2006">Stinson et al. (2006)</a>, this paper is a strong reminder
         that “good global regulation” is not sufficient by itself. A feedback model may produce
-        acceptable integrated behaviour while distorting the cold molecular phase in ways that
-        are hard to interpret physically.
+        acceptable integrated behaviour while distorting the cold molecular phase in ways that are
+        hard to interpret physically.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1808.10184" target="_blank" rel="noopener">Read paper</a>
     </article>
+
     <article class="blog-card" id="paper-where-gas-2018">
-  <div class="blog-date">February 2018</div>
-  <h3>Where Did All the Gas Go? Tracing the Fate of the Galactic Gas on the Top of the Sagittarius Dwarf Galaxy</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/1802.09533" target="_blank" rel="noopener">arXiv:1802.09533</a>
-  </p>
-  <p>
-    This paper is especially relevant because it asks a simple but physically important question about Sagittarius: if the system was once more gas rich,
-    where did that gas actually go? By focusing on gas stripping and its fate in the Galactic environment, the paper turns the Sagittarius problem from a
-    purely stellar-dynamical story into one that also involves the circumgalactic and disc gas cycle.
-  </p>
-  <figure class="paper-figure">
-    <img src="2018_where_did_gas_go.png" alt="Gas stripping and fate of Sagittarius gas in a Milky Way interaction simulation.">
-    <figcaption>
-      The figure shows the displaced gas associated with Sagittarius as it is stripped and redistributed during the interaction.
-      The reader is seeing why the absence of present-day gas does not imply a simple disappearance: the material is dynamically reprocessed by the encounter.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-sgr-lmc-mw-2017">The Influence of Sagittarius and the LMC on the Milky Way (2017)</a>, this note adds the baryonic side of a problem that is often discussed only in terms of orbits and stellar debris.
-    It also pairs naturally with the ISM-focused notes elsewhere on the page by reminding us that gas history is often central to interpreting the final system.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/1802.09533" target="_blank" rel="noopener">Read paper</a>
-</article>
+      <div class="blog-date">February 2018</div>
+      <h3>The Sagittarius dwarf galaxy: Where did all the gas go?</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1802.09533" target="_blank" rel="noopener">arXiv:1802.09533</a>
+      </p>
+      <p>
+        This paper is especially relevant because it asks a simple but physically important
+        question about Sagittarius: if the system was once more gas rich, where did that gas
+        actually go? By focusing on gas stripping and its fate in the Galactic environment, the
+        paper turns the Sagittarius problem from a purely stellar-dynamical story into one that
+        also involves the circumgalactic and disc gas cycle.
+      </p>
+      <figure class="paper-figure">
+        <img src="2018_where_did_gas_go.png" alt="Gas stripping and fate of Sagittarius gas in a Milky Way interaction simulation.">
+        <figcaption>
+          The figure shows the displaced gas associated with Sagittarius as it is stripped and
+          redistributed during the interaction. The reader is seeing why the absence of present-day
+          gas does not imply a simple disappearance: the material is dynamically reprocessed by the
+          encounter.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-sgr-lmc-mw-2017">The Influence of Sagittarius and the LMC on the
+        Milky Way (2017)</a>, this note adds the baryonic side of a problem that is often discussed
+        only in terms of orbits and stellar debris. It also pairs naturally with the ISM-focused
+        notes elsewhere on the page by reminding us that gas history is often central to
+        interpreting the final system.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1802.09533" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
     <article class="blog-card" id="paper-sgr-lmc-mw-2017">
-  <div class="blog-date">October 2017</div>
-  <h3>The Influence of Sagittarius and the Large Magellanic Cloud on the Milky Way Galaxy</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/1710.02538" target="_blank" rel="noopener">arXiv:1710.02538</a>
-  </p>
-  <p>
-    This paper is a useful reminder that the present-day Milky Way cannot be interpreted as a purely self-evolved disc.
-    By modelling the joint perturbations induced by Sagittarius and the LMC, the authors show that warps, asymmetries, and phase-space structure may carry the imprint of multiple satellites acting on different timescales.
-  </p>
-  <figure class="paper-figure">
-    <img src="2017_sgr_lmc_influence.png" alt="Milky Way response to Sagittarius and LMC perturbations.">
-    <figcaption>
-      The figure shows the Milky Way response to repeated satellite perturbations, highlighting distortions in the disc and halo.
-      What the reader is seeing is the cumulative dynamical wake of the interaction rather than a single clean tidal feature.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-code-comparison-2011">Athanassoula et al. (2011)</a> and
-    <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, this note sits slightly apart from the subgrid sequence but still fits the page well,
-    because it shows how much of Galactic structure depends on the live dynamical setting in which later chemo-dynamical interpretation has to operate.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/1710.02538" target="_blank" rel="noopener">Read paper</a>
-</article>
+      <div class="blog-date">October 2017</div>
+      <h3>The Influence of Sagittarius and the Large Magellanic Cloud on the Milky Way Galaxy</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1710.02538" target="_blank" rel="noopener">arXiv:1710.02538</a>
+      </p>
+      <p>
+        This paper is a useful reminder that the present-day Milky Way cannot be interpreted as a
+        purely self-evolved disc. By modelling the joint perturbations induced by Sagittarius and
+        the LMC, the authors show that warps, asymmetries, and phase-space structure may carry the
+        imprint of multiple satellites acting on different timescales.
+      </p>
+      <figure class="paper-figure">
+        <img src="2017_sgr_lmc_influence.png" alt="Milky Way response to Sagittarius and LMC perturbations.">
+        <figcaption>
+          The figure shows the Milky Way response to repeated satellite perturbations, highlighting
+          distortions in the disc and halo. What the reader is seeing is the cumulative dynamical
+          wake of the interaction rather than a single clean tidal feature.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-code-comparison-2011">Athanassoula et al. (2011)</a> and
+        <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, this note sits slightly apart from the
+        subgrid sequence but still fits the page well, because it shows how much of Galactic
+        structure depends on the live dynamical setting in which later chemo-dynamical
+        interpretation has to operate.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1710.02538" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-gasoline2-2017">
-  <div class="blog-date">July 2017</div>
-  <h3>Gasoline2: A Modern Smoothed Particle Hydrodynamics Code</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/1707.03824" target="_blank" rel="noopener">arXiv:1707.03824</a>
-  </p>
-  <p>
-    Gasoline2 is interesting because it shows what an SPH code looks like after the major methodological critiques of the previous decade have been taken seriously.
-    The paper incorporates improved kernels, diffusion terms, timestep handling, and force accuracy in a way that makes it an important representative of the post-classic SPH generation.
-  </p>
-  <figure class="paper-figure">
-    <img src="2017_gasoline2_tests.png" alt="Gasoline2 hydrodynamic test showing improved SPH behaviour.">
-    <figcaption>
-      The figure presents one of the code-validation tests used to show the improved SPH behaviour of Gasoline2.
-      The reader should notice the cleaner treatment of fluid structure and mixing relative to what older SPH formulations often struggled to reproduce.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-hopkins-psph-2012">Hopkins (2012)</a>,
-    <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, and
-    <a href="#paper-gadget-2001">GADGET (2001)</a>, this note complements the solver history already on the page by showing that the response to SPH criticisms was not only the rise of moving-mesh methods, but also a substantial redesign within the SPH family itself.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/1707.03824" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-gasoline2-2017">
+      <div class="blog-date">July 2017</div>
+      <h3>Gasoline2: A Modern Smoothed Particle Hydrodynamics Code</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1707.03824" target="_blank" rel="noopener">arXiv:1707.03824</a>
+      </p>
+      <p>
+        Gasoline2 is interesting because it shows what an SPH code looks like after the major
+        methodological critiques of the previous decade have been taken seriously. The paper
+        incorporates improved kernels, diffusion terms, timestep handling, and force accuracy in a
+        way that makes it an important representative of the post-classic SPH generation.
+      </p>
+      <figure class="paper-figure">
+        <img src="2017_gasoline2_tests.png" alt="Gasoline2 hydrodynamic test showing improved SPH behaviour.">
+        <figcaption>
+          The figure presents one of the code-validation tests used to show the improved SPH
+          behaviour of Gasoline2. The reader should notice the cleaner treatment of fluid structure
+          and mixing relative to what older SPH formulations often struggled to reproduce.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-hopkins-psph-2012">Hopkins (2012)</a>,
+        <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, and
+        <a href="#paper-gadget-2001">GADGET (2001)</a>, this note complements the solver history
+        already on the page by showing that the response to SPH criticisms was not only the rise of
+        moving-mesh methods, but also a substantial redesign within the SPH family itself.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1707.03824" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-limits-sn-feedback-2016">
-  <div class="blog-date">June 2016</div>
-  <h3>The Limits of Supernova Feedback. I. A Subgrid Model for Milky Way-like Galaxies</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/1606.09206" target="_blank" rel="noopener">arXiv:1606.09206</a>
-  </p>
-  <p>
-    This paper is valuable because it is much less triumphalist than many feedback papers.
-    Rather than presenting one prescription as universally sufficient, it asks how far supernova feedback alone can realistically go in regulating a Milky Way-like system.
-    That framing matters, because it turns the discussion from model tuning toward the physical scope and limits of the mechanism itself.
-  </p>
-  <figure class="paper-figure">
-    <img src="2016_limits_supernova_feedback.png" alt="Limits of supernova feedback figure comparing galaxy properties under different subgrid assumptions.">
-    <figcaption>
-      The figure compares galaxy outcomes obtained under different supernova-feedback assumptions.
-      What the reader sees is that changing the implementation shifts morphology and regulation noticeably, but does not automatically solve every problem, which is exactly the paper's main caution.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-superbubble-feedback-2015">The Superbubble Feedback Model (2015)</a>,
-    <a href="#paper-keller-2014">Keller et al. (2014)</a>, and
-    <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, this note preserves the critical tone that makes the feedback section of the page strong: the goal is not only to regulate star formation, but to understand what each subgrid channel can and cannot plausibly do.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/1606.09206" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-limits-sn-feedback-2016">
+      <div class="blog-date">June 2016</div>
+      <h3>Cosmological Galaxy Evolution with Superbubble Feedback II: The Limits of Supernovae</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1606.09206" target="_blank" rel="noopener">arXiv:1606.09206</a>
+      </p>
+      <p>
+        This paper is valuable because it is much less triumphalist than many feedback papers.
+        Rather than presenting one prescription as universally sufficient, it asks how far
+        supernova feedback alone can realistically go in regulating a Milky Way-like system. That
+        framing matters because it turns the discussion from model tuning toward the physical scope
+        and limits of the mechanism itself.
+      </p>
+      <figure class="paper-figure">
+        <img src="2016_limits_supernova_feedback.png" alt="Limits of supernova feedback figure comparing galaxy properties under different subgrid assumptions.">
+        <figcaption>
+          The figure compares galaxy outcomes obtained under different supernova-feedback
+          assumptions. What the reader sees is that changing the implementation shifts morphology
+          and regulation noticeably, but does not automatically solve every problem, which is
+          exactly the paper's main caution.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-superbubble-feedback-2015">Superbubble Feedback I (2015)</a>,
+        <a href="#paper-keller-2014">Keller et al. (2014)</a>, and
+        <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, this
+        note preserves the critical tone that makes the feedback section of the page strong: the
+        goal is not only to regulate star formation, but to understand what each subgrid channel
+        can and cannot plausibly do.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1606.09206" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-superbubble-feedback-2015">
-  <div class="blog-date">May 2015</div>
-  <h3>The Superbubble Feedback Model: Realistic Simulated Galaxies with Moderate Feedback</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/1505.06268" target="_blank" rel="noopener">arXiv:1505.06268</a>
-  </p>
-  <p>
-    This paper is attractive because it argues that one does not need arbitrarily extreme feedback to obtain more realistic galaxies,
-    provided the hot phase generated by clustered supernovae is treated with the right internal structure.
-    The superbubble picture is therefore interesting not only as a regulation mechanism, but as an attempt to keep unresolved phase exchange physically meaningful.
-  </p>
-  <figure class="paper-figure">
-    <img src="2015_superbubble_feedback_model.png" alt="Superbubble feedback model figure showing galaxy structure under moderate feedback.">
-    <figcaption>
-      The figure compares galaxy structure obtained with the superbubble model under moderate feedback assumptions.
-      The reader is seeing that the disc can remain comparatively realistic without resorting to simply overwhelming the system with stronger and stronger effective energy input.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-eagle-2014">The EAGLE Simulations (2014)</a>,
-    <a href="#paper-keller-2014">Keller et al. (2014)</a>, and
-    <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, this note fits very well with the existing feedback sequence because it keeps returning to the same question: can one obtain realistic galaxies without giving up physical meaning in the hot ISM phase?
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/1505.06268" target="_blank" rel="noopener">Read paper</a>
-</article>
+    <article class="blog-card" id="paper-superbubble-feedback-2015">
+      <div class="blog-date">May 2015</div>
+      <h3>Cosmological Galaxy Evolution with Superbubble Feedback I: Realistic Galaxies with Moderate Feedback</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1505.06268" target="_blank" rel="noopener">arXiv:1505.06268</a>
+      </p>
+      <p>
+        This paper is attractive because it asks whether a cosmological simulation can produce more
+        realistic galaxies without relying on arbitrarily extreme feedback. The main point is not
+        that feedback should simply be stronger, but that the hot phase generated by clustered
+        supernovae needs to retain enough physical meaning to regulate the system efficiently at
+        the galaxy scale. In that sense, the paper is a bridge between the superbubble idea and its
+        cosmological application.
+      </p>
+      <figure class="paper-figure">
+        <img src="2015_superbubble_feedback_model.png" alt="Cosmological galaxy evolution with superbubble feedback.">
+        <figcaption>
+          The figure compares galaxy structure obtained in cosmological runs with superbubble
+          feedback. The important point is that the disc can remain comparatively realistic without
+          requiring feedback to be represented only as an increasingly aggressive effective energy
+          injection.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-keller-2014">Keller et al. (2014)</a>,
+        <a href="#paper-eagle-2014">The EAGLE Simulations (2014)</a>, and
+        <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, this
+        note fits very well with the existing feedback sequence because it keeps returning to the
+        same question: can one obtain realistic galaxies without giving up physical meaning in the
+        hot ISM phase?
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1505.06268" target="_blank" rel="noopener">Read paper</a>
+    </article>
 
-<article class="blog-card" id="paper-eagle-2014">
-  <div class="blog-date">October 2014</div>
-  <h3>The EAGLE Project: Simulating the Evolution and Assembly of Galaxies and their Environments</h3>
-  <p class="paper-ref">
-    <a href="https://arxiv.org/abs/1410.3485" target="_blank" rel="noopener">arXiv:1410.3485</a>
-  </p>
-  <p>
-    EAGLE is a major reference point because it presents a full galaxy-formation framework that is explicit about calibration,
-    large-scale observables, and the practical role of subgrid choices in cosmological simulations.
-    The paper is especially helpful when read alongside other model-building notes here because it is not trying to resolve the full ISM directly;
-    instead, it asks how far one can go with a carefully constructed effective framework tied to observational constraints.
-  </p>
-  <figure class="paper-figure">
-    <img src="2014_eagle_project.png" alt="EAGLE figure comparing simulated galaxy properties with observed scaling relations.">
-    <figcaption>
-      The figure compares EAGLE galaxies with key observational relations. What the reader should notice is that the agreement is assessed at the population level,
-      which is why this paper became so influential in discussions of calibrated cosmological subgrid models.
-    </figcaption>
-  </figure>
-  <p>
-    Read after <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>,
-    <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, and
-    <a href="#paper-sh03-2002">SH03</a>, this note provides a useful counterpoint to the more ISM-explicit papers elsewhere on the page:
-    it shows how effective models can still be extremely successful when the scientific target is the galaxy population rather than the resolved multiphase cycle itself.
-  </p>
-  <a class="text-link" href="https://arxiv.org/abs/1410.3485" target="_blank" rel="noopener">Read paper</a>
-</article>  
+    <article class="blog-card" id="paper-eagle-2014">
+      <div class="blog-date">October 2014</div>
+      <h3>Evolution of galaxy stellar masses and star formation rates in the EAGLE simulations</h3>
+      <p class="paper-ref">
+        <a href="https://arxiv.org/abs/1410.3485" target="_blank" rel="noopener">arXiv:1410.3485</a>
+      </p>
+      <p>
+        EAGLE is a major reference point because it presents a full galaxy-formation framework that
+        is explicit about calibration, large-scale observables, and the practical role of subgrid
+        choices in cosmological simulations. The paper is especially helpful when read alongside
+        other model-building notes here because it is not trying to resolve the full ISM directly;
+        instead, it asks how far one can go with a carefully constructed effective framework tied
+        to observational constraints.
+      </p>
+      <figure class="paper-figure">
+        <img src="2014_eagle_project.png" alt="EAGLE figure comparing simulated galaxy properties with observed scaling relations.">
+        <figcaption>
+          The figure compares EAGLE galaxies with key observational relations. What the reader
+          should notice is that the agreement is assessed at the population level, which is why
+          this paper became so influential in discussions of calibrated cosmological subgrid models.
+        </figcaption>
+      </figure>
+      <p>
+        Read after <a href="#paper-vogelsberger-2013">Vogelsberger et al. (2013)</a>,
+        <a href="#paper-dalla-vecchia-schaye-2012">Dalla Vecchia &amp; Schaye (2012)</a>, and
+        <a href="#paper-sh03-2002">SH03</a>, this note provides a useful counterpoint to the more
+        ISM-explicit papers elsewhere on the page: it shows how effective models can still be
+        extremely successful when the scientific target is the galaxy population rather than the
+        resolved multiphase cycle itself.
+      </p>
+      <a class="text-link" href="https://arxiv.org/abs/1410.3485" target="_blank" rel="noopener">Read paper</a>
+    </article>
+
     <article class="blog-card" id="paper-keller-2014">
       <div class="blog-date">May 2014</div>
       <h3>A Superbubble Feedback Model for Galaxy Simulations</h3>
@@ -808,15 +889,15 @@
         Keller et al. push the feedback discussion beyond isolated supernova events and toward
         clustered stellar feedback, emphasizing that unresolved feedback regions should not be
         treated as single-phase parcels. The superbubble model is attractive because it tries to
-        preserve the hot interior and the evaporation of colder material into that bubble,
-        rather than relying on a purely artificial cooling switch.
+        preserve the hot interior and the evaporation of colder material into that bubble, rather
+        than relying on a purely artificial cooling switch.
       </p>
       <figure class="paper-figure">
         <img src="keller-2014-fig12.png" alt="Keller et al. 2014 Kennicutt-Schmidt comparison for the superbubble model.">
         <figcaption>
-          A representative diagnostic from Keller et al. (2014): the superbubble model is not
-          only morphologically appealing, but also moves the simulated disc toward a more
-          realistic star-formation law.
+          A representative diagnostic from Keller et al. (2014): the superbubble model is not only
+          morphologically appealing, but also moves the simulated disc toward a more realistic
+          star-formation law.
         </figcaption>
       </figure>
       <p>
@@ -824,8 +905,8 @@
         <a href="#paper-stinson-2006">Stinson et al. (2006)</a>, and
         <a href="#paper-sh03-2002">SH03</a>, this paper is best understood as a phase-structure
         paper. Its main point is that the unresolved hot bubble should retain physical meaning,
-        because that hot phase is central to how feedback vents out of the disc and regulates
-        star formation.
+        because that hot phase is central to how feedback vents out of the disc and regulates star
+        formation.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1405.2625" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -839,9 +920,9 @@
       <p>
         Vogelsberger et al. present a galaxy-formation model built for cosmological simulations
         with a modern hydrodynamical solver, combining radiative cooling, enrichment, stellar
-        feedback, black-hole growth, and AGN feedback in a unified framework. What makes the
-        paper especially useful is that it does not present the model only as a technical recipe;
-        it evaluates the resulting galaxy population against a broad suite of observables.
+        feedback, black-hole growth, and AGN feedback in a unified framework. What makes the paper
+        especially useful is that it does not present the model only as a technical recipe; it
+        evaluates the resulting galaxy population against a broad suite of observables.
       </p>
       <figure class="paper-figure">
         <img src="vogelsberger2013_fig7.png" alt="Vogelsberger et al. 2013 stellar-mass-halo-mass relation figure.">
@@ -854,9 +935,9 @@
       <p>
         Read after <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a>,
         <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, and
-        <a href="#paper-sh03-2002">SH03</a>, this paper illustrates a broader shift in the
-        field: from effective star-formation regulation alone toward larger, more modular
-        galaxy-formation frameworks calibrated against several observables at once.
+        <a href="#paper-sh03-2002">SH03</a>, this paper illustrates a broader shift in the field:
+        from effective star-formation regulation alone toward larger, more modular galaxy-formation
+        frameworks calibrated against several observables at once.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1305.2913" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -868,28 +949,26 @@
         <a href="https://arxiv.org/abs/1206.5006" target="_blank" rel="noopener">arXiv:1206.5006</a>
       </p>
       <p>
-        This paper is one of the key responses to the criticism that traditional SPH
-        formulations have difficulty with fluid mixing, contact discontinuities, and some
-        instability problems. Rather than abandoning SPH, Hopkins derives a broader
-        Lagrangian framework that preserves conservation while improving the treatment of
-        interfaces. It is therefore important not only for the results it produces, but also
-        for the way it reconstructs the equations themselves.
+        This paper is one of the key responses to the criticism that traditional SPH formulations
+        have difficulty with fluid mixing, contact discontinuities, and some instability problems.
+        Rather than abandoning SPH, Hopkins derives a broader Lagrangian framework that preserves
+        conservation while improving the treatment of interfaces. It is therefore important not only
+        for the results it produces, but also for the way it reconstructs the equations themselves.
       </p>
       <figure class="paper-figure">
         <img src="hopkins2012_fig6.png" alt="Hopkins 2012 Kelvin-Helmholtz comparison illustrating pressure-entropy SPH.">
         <figcaption>
-          A representative Kelvin–Helmholtz comparison, included because it directly visualizes
-          the mixing problem that motivated pressure-entropy SPH.
+          A representative Kelvin–Helmholtz comparison, included because it directly visualizes the
+          mixing problem that motivated pressure-entropy SPH.
         </figcaption>
       </figure>
       <p>
         Read after <a href="#paper-arepo-movingmesh-2009">AREPO (2009)</a> and
         <a href="#paper-gadget2-2005">GADGET-2 (2005)</a>, this paper is best seen as a
-        methodological answer to the growing realization that some “physical” differences
+        methodological answer to the growing realization that some apparent “physical” differences
         between galaxy simulations could in fact originate in the hydrodynamical formulation
-        itself. It is interesting to note that, as early as 2001, Volker Springel and collaborators
-        had discussed the possibility of using this methodology to solve hydrodynamic equations (<a href="#paper-gadget-2001">Springel et al (2001)</a>);
-        however, it was only in 2009 that it became feasible to implement a complete code based on this concept.
+        itself. Together with the moving-mesh literature, it helped clarify that solver design is
+        part of the physics interpretation problem, not something fully separable from it.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1206.5006" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -901,26 +980,26 @@
         <a href="https://arxiv.org/abs/1203.5667" target="_blank" rel="noopener">arXiv:1203.5667</a>
       </p>
       <p>
-        This is one of the cleanest Reading Notes in the feedback literature because it identifies the
-        numerical problem with unusual precision. Thermal feedback often fails not because
-        thermal energy is intrinsically unphysical, but because the injected energy is spread
-        over too much mass. The resulting temperature jump is too small, the cooling time is
-        too short, and the feedback energy is radiated away before it can do dynamical work.
+        This is one of the cleanest papers in the feedback literature because it identifies the
+        numerical problem with unusual precision. Thermal feedback often fails not because thermal
+        energy is intrinsically unphysical, but because the injected energy is spread over too much
+        mass. The resulting temperature jump is too small, the cooling time is too short, and the
+        feedback energy is radiated away before it can do dynamical work.
       </p>
       <figure class="paper-figure">
         <img src="dalla-vecchia-schaye-2012-fig1.png" alt="Dalla Vecchia and Schaye 2012 figure comparing sound-crossing and cooling times after heating.">
         <figcaption>
-          The conceptual core of the paper: the comparison between sound-crossing and cooling
-          times shows when thermal feedback can convert injected energy into motion instead of
-          losing it immediately to radiation.
+          The conceptual core of the paper: the comparison between sound-crossing and cooling times
+          shows when thermal feedback can convert injected energy into motion instead of losing it
+          immediately to radiation.
         </figcaption>
       </figure>
       <p>
         Read after <a href="#paper-gadget2-2005">GADGET-2 (2005)</a> and
         <a href="#paper-sh03-2002">SH03</a>, this paper remains a foundational reference for
-        making thermal feedback numerically viable without turning cooling off by hand. Even
-        when one prefers mechanical or multiphase approaches, it is still essential for
-        understanding why naive thermal injection so often fails.
+        making thermal feedback numerically viable without turning cooling off by hand. Even when
+        one prefers mechanical or multiphase approaches, it is still essential for understanding
+        why naive thermal injection so often fails.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/1203.5667" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -930,11 +1009,11 @@
       <h3>Comparisons of Different Codes for Galactic N-body Simulations</h3>
       <p class="paper-ref">Athanassoula et al. 2011, <em>A&amp;A</em>, 531, A120</p>
       <p>
-        Although this paper is focused on gravity solvers and pure N-body applications rather
-        than baryonic subgrid physics, it is very useful for placing widely used astrophysical
-        codes in a broader numerical ecosystem. The comparison is valuable precisely because it
-        asks not only whether different methods can run, but how they differ in memory use,
-        timing, scaling, and dynamical accuracy for the same class of problems.
+        Although this paper is focused on gravity solvers and pure N-body applications rather than
+        baryonic subgrid physics, it is very useful for placing widely used astrophysical codes in
+        a broader numerical ecosystem. The comparison is valuable precisely because it asks not only
+        whether different methods can run, but how they differ in memory use, timing, scaling, and
+        dynamical accuracy for the same class of problems.
       </p>
       <figure class="paper-figure">
         <img src="athanassoula2011_fig8.png" alt="Athanassoula et al. 2011 comparison figure for galactic N-body codes.">
@@ -962,23 +1041,22 @@
         This paper is one of the major turning points in computational hydrodynamics for
         astrophysics. Springel proposes a moving-mesh finite-volume method based on a Voronoi
         tessellation and a Godunov scheme, with the explicit goal of combining the adaptivity of
-        Lagrangian methods with the shock-capturing strengths of Eulerian approaches. The paper
-        is motivated by limitations that had become increasingly visible in both traditional SPH
-        and fixed-grid methods.
+        Lagrangian methods with the shock-capturing strengths of Eulerian approaches. The paper is
+        motivated by limitations that had become increasingly visible in both traditional SPH and
+        fixed-grid methods.
       </p>
       <figure class="paper-figure">
         <img src="springel2010_arepo_fig34.png" alt="Springel 2009 AREPO Kelvin-Helmholtz comparison.">
         <figcaption>
-          The classic Kelvin–Helmholtz comparison from the original AREPO paper, still one of
-          the clearest visual demonstrations of why moving-mesh methods attracted so much
-          attention.
+          The classic Kelvin–Helmholtz comparison from the original AREPO paper, still one of the
+          clearest visual demonstrations of why moving-mesh methods attracted so much attention.
         </figcaption>
       </figure>
       <p>
         Read after <a href="#paper-gadget2-2005">GADGET-2 (2005)</a> and
-        <a href="#paper-sh03-2002">SH03</a>, this paper is important because it changes the
-        solver itself, and therefore changes the context in which later discussions of galaxy
-        formation and subgrid realism must be interpreted.
+        <a href="#paper-sh03-2002">SH03</a>, this paper is important because it changes the solver
+        itself, and therefore changes the context in which later discussions of galaxy formation and
+        subgrid realism must be interpreted.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/0901.4107" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -990,18 +1068,18 @@
         <a href="https://arxiv.org/abs/astro-ph/0602350" target="_blank" rel="noopener">arXiv:astro-ph/0602350</a>
       </p>
       <p>
-        This paper is a classic because it helped define the blastwave-feedback style that
-        became highly influential in SPH galaxy simulations. The preferred model does not merely
-        inject stronger feedback in an arbitrary sense; it temporarily suppresses cooling inside
-        the unresolved remnant, motivated by Sedov–Taylor and snowplow evolution, so that the
-        feedback remains dynamically important for long enough to alter the disc.
+        This paper is a classic because it helped define the blastwave-feedback style that became
+        highly influential in SPH galaxy simulations. The preferred model does not merely inject
+        stronger feedback in an arbitrary sense; it temporarily suppresses cooling inside the
+        unresolved remnant, motivated by Sedov–Taylor and snowplow evolution, so that the feedback
+        remains dynamically important for long enough to alter the disc.
       </p>
       <figure class="paper-figure">
         <img src="stinson-2006-fig19.png" alt="Stinson et al. 2006 isolated galaxy morphology under blastwave feedback.">
         <figcaption>
           A representative morphology comparison showing the practical impact of the blastwave
-          model: the disc becomes more structured, turbulent, and vertically extended than in
-          weaker local-feedback runs.
+          model: the disc becomes more structured, turbulent, and vertically extended than in weaker
+          local-feedback runs.
         </figcaption>
       </figure>
       <p>
@@ -1030,15 +1108,15 @@
       <figure class="paper-figure">
         <img src="gadget2_2005_fig16.png" alt="GADGET-2 hydrodynamic test figure.">
         <figcaption>
-          A representative hydrodynamic test from GADGET-2, useful because it shows that the
-          code’s importance went well beyond gravity-only cosmological applications.
+          A representative hydrodynamic test from GADGET-2, useful because it shows that the code’s
+          importance went well beyond gravity-only cosmological applications.
         </figcaption>
       </figure>
       <p>
         Read after <a href="#paper-sh03-2002">SH03</a> and
-        <a href="#paper-gadget-2001">GADGET (2001)</a>, this paper can be seen as the point
-        where a promising numerical platform became the standard technical home for a large
-        fraction of later galaxy-formation modeling.
+        <a href="#paper-gadget-2001">GADGET (2001)</a>, this paper can be seen as the point where a
+        promising numerical platform became the standard technical home for a large fraction of
+        later galaxy-formation modeling.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/astro-ph/0505010" target="_blank" rel="noopener">Read paper</a>
     </article>
@@ -1051,26 +1129,25 @@
       </p>
       <p>
         Springel and Hernquist introduce one of the most influential effective models for the
-        unresolved interstellar medium in cosmological simulations. Star-forming gas is treated
-        as a hybrid multiphase medium in which cold clouds, hot ambient gas, cooling,
-        supernova heating, evaporation, enrichment, and winds are coupled through a subgrid
-        equilibrium framework. Its importance lies in providing a practical way to model star
-        formation and feedback when the true small-scale ISM structure is far below the
-        numerical resolution.
+        unresolved interstellar medium in cosmological simulations. Star-forming gas is treated as
+        a hybrid multiphase medium in which cold clouds, hot ambient gas, cooling, supernova
+        heating, evaporation, enrichment, and winds are coupled through a subgrid equilibrium
+        framework. Its importance lies in providing a practical way to model star formation and
+        feedback when the true small-scale ISM structure is far below the numerical resolution.
       </p>
       <figure class="paper-figure">
         <img src="springel_hernquist2003_fig1.png" alt="Springel and Hernquist 2003 effective multiphase model diagram.">
         <figcaption>
-          The effective multiphase construction at the heart of SH03: above the density
-          threshold, unresolved star-forming gas is replaced by a pressurized equilibrium model
-          coupled to a star-formation law.
+          The effective multiphase construction at the heart of SH03: above the density threshold,
+          unresolved star-forming gas is replaced by a pressurized equilibrium model coupled to a
+          star-formation law.
         </figcaption>
       </figure>
       <p>
         Built on the computational framework established by <a href="#paper-gadget-2001">GADGET
         (2001)</a>, SH03 became foundational because it showed how an effective ISM model could
         deliver self-regulated star formation in large cosmological runs. It is exactly this
-        success, however, that later made it such an important target of critique in Reading Notes
+        success, however, that later made it such an important target of critique in notes
         concerned with burstiness, multiphase structure, and feedback realism.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/astro-ph/0206393" target="_blank" rel="noopener">Read paper</a>
@@ -1083,26 +1160,26 @@
         <a href="https://arxiv.org/abs/astro-ph/0003162" target="_blank" rel="noopener">arXiv:astro-ph/0003162</a>
       </p>
       <p>
-        This is the natural starting point of the sequence. Springel, Yoshida, and White
-        present GADGET as a public Tree+SPH code designed for cosmological structure formation
-        and interacting galaxies, combining collisionless N-body dynamics and gas hydrodynamics
-        in a massively parallel framework. The emphasis on adaptive timesteps, dynamic range,
-        and public release was historically important because it helped define what a modern
-        community code in computational cosmology could look like.
+        This is the natural starting point of the sequence. Springel, Yoshida, and White present
+        GADGET as a public Tree+SPH code designed for cosmological structure formation and
+        interacting galaxies, combining collisionless N-body dynamics and gas hydrodynamics in a
+        massively parallel framework. The emphasis on adaptive timesteps, dynamic range, and public
+        release was historically important because it helped define what a modern community code in
+        computational cosmology could look like.
       </p>
       <figure class="paper-figure">
         <img src="gadget2001_fig11.png" alt="GADGET 2001 scaling and performance figure.">
         <figcaption>
-          A representative scaling result from the first GADGET paper, included because
-          parallel performance was already a central design concern in the code’s earliest
-          public formulation.
+          A representative scaling result from the first GADGET paper, included because parallel
+          performance was already a central design concern in the code’s earliest public
+          formulation.
         </figcaption>
       </figure>
       <p>
         In retrospect, this paper is valuable not only for its algorithms, but because it
-        establishes the platform on top of which much of the later story unfolds. In that
-        sense, GADGET (2001) is less a final answer than the opening chapter of a long
-        numerical lineage in galaxy-formation simulations.
+        establishes the platform on top of which much of the later story unfolds. In that sense,
+        GADGET (2001) is less a final answer than the opening chapter of a long numerical lineage
+        in galaxy-formation simulations.
       </p>
       <a class="text-link" href="https://arxiv.org/abs/astro-ph/0003162" target="_blank" rel="noopener">Read paper</a>
     </article>
